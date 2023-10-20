@@ -2,7 +2,7 @@
 name: Test case template
 about: Describe this issue template's purpose here.
 title: ''
-labels: ''
+labels: bug
 assignees: ''
 
 ---
