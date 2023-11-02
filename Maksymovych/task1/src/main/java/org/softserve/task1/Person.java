@@ -1,4 +1,4 @@
-package org.softserve;
+package org.softserve.task1;
 
 import java.util.ArrayList;
 import java.util.Scanner;
