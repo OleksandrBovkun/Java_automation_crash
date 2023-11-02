@@ -21,6 +21,8 @@ public class Student {
     private String lastName;
     private String scoreBookNumber;
     private List <String> groups;
+    private List <Discipline> disciplines;
+
 
     public void addGroup(String group){
         groups.add(group);

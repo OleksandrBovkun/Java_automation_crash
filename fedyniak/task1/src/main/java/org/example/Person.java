@@ -8,16 +8,11 @@ import java.util.Scanner;
 
 public class Person {
     private String name;
-    private int birthYear;
+    private Integer birthYear;
 
     public Person(){}
     public Person(String name){
         this.name = name;
-    }
-    public Person(String name, int birthYear){
-        this.name = name;
-        this.birthYear = birthYear;
-
     }
 
 

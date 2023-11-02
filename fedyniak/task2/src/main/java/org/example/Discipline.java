@@ -1,5 +1,6 @@
 package fedyniak.task2.src.main.java.org.example;
 
+import fedyniak.task2.src.main.java.org.example.enums.DisciplineTypeEnum;
 import lombok.*;
 import lombok.extern.java.Log;
 
@@ -19,8 +20,8 @@ public class Discipline {
     private LocalDate date;
     private LocalDate passDate;
     @NonNull
-    private String type;
-    private int mark;
+    private DisciplineTypeEnum type;
+    private Integer mark;
     private boolean passed;
 
 
