@@ -1,4 +1,4 @@
-package org.example;
+package fedyniak.task1.src.main.java.org.example;
 
 import java.time.Year;
 import java.util.Objects;
