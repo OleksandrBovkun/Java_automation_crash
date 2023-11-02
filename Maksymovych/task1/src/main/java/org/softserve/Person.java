@@ -1,4 +1,4 @@
-package org.example;
+package org.softserve;
 
 import java.util.ArrayList;
 import java.util.Scanner;
