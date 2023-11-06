@@ -25,3 +25,7 @@
 /out/production/Java_automation_crash/task1.iml
 /out/production/Java_automation_crash/task2.iml
 /out/production/Java_automation_crash/.github/ISSUE_TEMPLATE/TEST_CASE_TEMPLATE.md
+/out/production/Java_automation_crash/Fedyniak/task2/src/main/java/org/example/enums/DisciplineTypeEnum.class
+*.class
+.idea/sonarlint/*
+*.xml
