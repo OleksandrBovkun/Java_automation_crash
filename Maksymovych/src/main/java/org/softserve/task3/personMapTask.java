@@ -1,9 +1,13 @@
 package org.softserve.task3;
 
-import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Map;
 
 public class personMapTask {
+
+    public static boolean isAllNameUnique(Map<String,String> personMap){
+        return personMap.values().stream().distinct().count() == personMap.values().size();
+    }
     public static void main(String[] args){
         var personMap = new HashMap<String,String>();
         personMap.put("LastName","FirstName");
@@ -17,7 +21,7 @@ public class personMapTask {
         personMap.put("Carter","James");
         personMap.put("Ford","Gerald");
         System.out.print("There are at less two persons with the same firstName among these 10 people? ");
-        if (personMap.values().stream().distinct().count() == personMap.values().size()){
+        if (isAllNameUnique(personMap)){
             System.out.println("No");
         }else {
             System.out.println("Yes");

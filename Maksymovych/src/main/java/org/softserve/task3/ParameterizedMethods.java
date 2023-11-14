@@ -1,6 +1,7 @@
 package org.softserve.task3;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class ParameterizedMethods {
@@ -14,14 +15,8 @@ public class ParameterizedMethods {
     }
 
     public static void main(String[] args){
-        var set1 = new HashSet<Integer>();
-        set1.add(3);
-        set1.add(1);
-        set1.add(2);
-        var set2 = new HashSet<Integer>();
-        set1.add(4);
-        set1.add(3);
-        set1.add(5);
+        var set1 = new HashSet<Integer>(List.of(3,1,2));
+        var set2 = new HashSet<Integer>(List.of(4,3,5));
 
         var result = ParameterizedMethods.union(set1,set2);
         System.out.println(result);
