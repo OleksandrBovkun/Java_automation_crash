@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-class MainTest {
+class BaseTest {
     static WebDriver driver;
     static WebDriverWait wait;
 
