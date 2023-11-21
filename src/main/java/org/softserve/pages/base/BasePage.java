@@ -9,7 +9,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-import static org.softserve.constants.Constant.TestsSettings.EXPLICITLY_WAIT;
+
+import static org.softserve.constants.Constants.TestsSettings.EXPLICITLY_WAIT;
 
 public abstract class BasePage {
     protected WebDriver driver;

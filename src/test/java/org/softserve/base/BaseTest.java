@@ -14,12 +14,13 @@ import org.softserve.pages.logout.LogoutPage;
 import org.softserve.pages.product.review.ReviewPage;
 
 
-import static org.softserve.constants.Constant.TestsSettings.CLEAR_COOKIES_AND_STORAGE;
-import static org.softserve.constants.Constant.TestsSettings.QUIT_BROWSER;
+import static org.softserve.constants.Constants.TestsSettings.CLEAR_COOKIES_AND_STORAGE;
+import static org.softserve.constants.Constants.TestsSettings.QUIT_BROWSER;
 
 
 public class BaseTest {
     protected static WebDriver driver = SetupDriver.createDriver(); //null;//
+
 
     protected LoginPage loginPage = new LoginPage(driver);
     protected ReviewPage reviewPage = new ReviewPage(driver);
@@ -41,7 +42,6 @@ public class BaseTest {
     @AfterAll
     public static void close() {
         if (QUIT_BROWSER){
-//            driver.close();
             driver.quit();
         }
     }

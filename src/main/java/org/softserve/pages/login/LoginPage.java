@@ -7,6 +7,7 @@ import org.softserve.pages.base.BasePage;
 
 import static org.softserve.constants.Xpath.Login;
 
+
 public class LoginPage extends BasePage {
 
     @FindBy(xpath = Login.EMAIL_INPUT)
