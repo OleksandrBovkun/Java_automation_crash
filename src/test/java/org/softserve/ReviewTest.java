@@ -10,7 +10,6 @@ import org.openqa.selenium.WebElement;
 import org.softserve.base.BaseTest;
 import org.softserve.pages.product.review.ReviewPage.StarRating;
 
-import static org.softserve.Config.QUIT_BROWSER;
 import static org.softserve.constants.Constant.Links.LOGIN_PAGE_LINK;
 import static org.softserve.constants.Constant.Links.PRODUCT_EXAMPLE_LINK;
 

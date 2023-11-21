@@ -13,6 +13,7 @@ public class Constant {
 
         boolean CLEAR_COOKIES_AND_STORAGE = true;
         int EXPLICITLY_WAIT = 20;
+        boolean QUIT_BROWSER = true;
     }
 
 
