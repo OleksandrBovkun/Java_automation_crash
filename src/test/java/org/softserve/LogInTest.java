@@ -9,7 +9,7 @@ import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class LogInTest extends MainTest {
+public class LogInTest extends BaseTest {
 
     @Test
     public void LogInTest() {
