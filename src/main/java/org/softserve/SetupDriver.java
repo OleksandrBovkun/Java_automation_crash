@@ -1,5 +1,6 @@
 package org.softserve;
 
+import dev.failsafe.internal.util.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -27,7 +28,7 @@ public class SetupDriver {
                 break;
 
             default:
-//                Assert.fail("Incorrect platform, or browser name : " + BROWSER);
+                Assert.isTrue(true, "Incorrect platform, or browser name : ", BROWSER);
         }
         driver.manage().window().maximize();
 //        driver.manage().timeouts().
