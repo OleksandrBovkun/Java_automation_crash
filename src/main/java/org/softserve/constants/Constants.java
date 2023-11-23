@@ -4,10 +4,11 @@ public class Constants {
 
     public interface Links{
         String
+                MAIN_PAGE_LINK = "https://magento.softwaretestingboard.com/",
                 LOGIN_PAGE_LINK = "https://magento.softwaretestingboard.com/customer/account/login",
                 LOGOUT_LINK = "https://magento.softwaretestingboard.com/customer/account/logout/",
                 PRODUCT_EXAMPLE_LINK = "https://magento.softwaretestingboard.com/circe-hooded-ice-fleece.html",
-                MAIN_PAGE_LINK = "https://magento.softwaretestingboard.com/",
+
 
                 WOMEN_TOPS_LINK = "https://magento.softwaretestingboard.com/women/tops-women.html",
 

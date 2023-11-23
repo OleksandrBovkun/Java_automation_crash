@@ -1,43 +1,83 @@
 package org.softserve.constants;
 
+/**
+ * todo: 1. optional - install 'CamelCase' plugin for switching cases of constants and web elements:
+ *  (ctrl+alt+s) ==> marketplace ==> CamelCase ;
+ *  2. set links (or examples if it covers several pages) of pages for provided xpathes;
+ *  3. delete repeatable xpathes;
+ *  4. try to format xpathes so they don't contain:
+ *      1) ['number']: [4]::       /html/body/div[2]/header/div[2]/div[1]/a  ==>   //header//div[@class='minicart-wrapper']//a[@class='action showcart']
+ *      2) unneeded html tags::   //main/div/div/form//button                ==>  //main//form[@class='form-address-edit']//button[@data-action='save-address']
+ *      try to use @id, @name, @class etc instead (it can make xpath be even longer, but it's ok):
+ *      in such way we make xpath more accurate
+ *      pattern: 2-3 tags with parameters :: //tag1[@class='abc']//tag2[@id='qwe']//tafFinal[@id='final']
+ *
+ */
+
+
 public class Xpath {
-    // Maksymovych Mykola
-    public interface LogIn{
-        String SignInLink = "//header//ul/li[2]/a",
-        EmailInput = "//form/fieldset//div/input[@id='email']",
-        PasswordInput = "//form/fieldset//div/input[@id='pass']",
-        SignInButton = "//form/fieldset//button[@id='send2']";
+
+    // Ivan Fedyniak
+    public interface Login{
+        //https://magento.softwaretestingboard.com/customer/account/login/
+        String
+                EMAIL_INPUT = "//input[@name='login[username]']",
+                PASSWORD_INPUT = "//input[@name='login[password]']",
+                SIGN_IN_BUTTON = "//button[@id='send2' and @class='action login primary']",
+                FORGOT_PASSWORD_BUTTON = "//a[@class='action remind' and span[text()='Forgot Your Password?']]",
+                CREATE_ACCOUNT_BUTTON = "//a[@class='action create primary' and span[text()='Create an Account']]";
     }
+    public interface Review{
+        // for any product page, example:
+        // https://magento.softwaretestingboard.com/circe-hooded-ice-fleece.html
+        interface RATING{
+            String
+                    ONE_STAR_INPUT = "//input[@id='Rating_1']",
+                    TWO_STAR_INPUT = "//input[@id='Rating_2']",
+                    THREE_STAR_INPUT = "//input[@id='Rating_3']",
+                    FOUR_STAR_INPUT = "//input[@id='Rating_4']",
+                    FIVE_STAR_INPUT = "//input[@id='Rating_5']";
+        }
+        String
+                PRODUCT_REVIEWS_BUTTON = "//a[@id='tab-label-reviews-title']",
+                NICKNAME_INPUT = "//input[@id='nickname_field']",
+                SUMMARY_INPUT = "//input[@id='summary_field']",
+                REVIEW_TEXTAREA = "//textarea[@id='review_field']",
+                SUBMIT_BUTTON = "//button[@class='action submit primary' and span[text()='Submit Review']]",
+                REVIEW_SUBMITTED_MESSAGE = "//div[@role='alert' and div//div[text()='You submitted your review for moderation.']]";
+    }
+
+    // Maksymovych Mykola
     public interface Base{
         // URI https://magento.softwaretestingboard.com/
-        String WelcomeMsg = "//header//div/ul/li[1]/span";
-        String WelcomeButton = "//header//div/ul/li/span/button";
+        String WELCOME_MSG = "//header//li[@class='greet welcome']//span",
+            WELCOME_BUTTON = "//header//div/ul/li/span/button"; // can not find on provided url!
     }
     public interface Account{
         // https://magento.softwaretestingboard.com/customer/account/
-        static String MyAccountLabel = "/html/body//main//h1/span",
-        AddressBookLink = "//div/ul/li[6]/a";
+        String MY_ACCOUNT_LABEL = "//h1[@class='page-title']//span[@class='base']",
+                ADDRESS_BOOK_LINK = "//div[@id='block-collapsible-nav']//li//a[text()='Address Book']";
     }
     public interface Address {
         // https://magento.softwaretestingboard.com/customer/address/
-        String AddressBookLabel ="//main//h1/span",
-        AddNewAddressButton ="//main//button[contains(.,'Add New Address')]",
-        AdditionalAddressFirstNameLabel ="//main//table/tbody/tr/td[1]";
+        String ADDRESS_BOOK_LABEL ="//main//h1/span",
+        ADD_NEW_ADDRESS_BUTTON ="//main//button[contains(.,'Add New Address')]",
+        ADDITIONAL_ADDRESS_FIRST_NAME_LABEL ="//main//table/tbody/tr/td[1]";
 
         public interface New {
             // https://magento.softwaretestingboard.com/customer/address/new/
-            String AddNewAddressLabel ="//main//h1/span",
+            String ADD_NEW_ADDRESS_LABEL ="//main//h1/span",
 
-            FirstNameInput ="//input[@id='firstname']",
-            LastNameInput ="//input[@id='lastname']",
-            TelephoneInput ="//input[@id='telephone']",
-            StreetAddressInput ="//input[@id='street_1']",
-            CityInput ="//input[@id='city']",
-            StateProvinceInput ="//select[@id='region_id']",
-            ZipPostalCodeInput ="//input[@id='zip']",
-            CountryInput ="//select[@id='country']",
+            FIRST_NAME_INPUT ="//input[@id='firstname']",
+            LAST_NAME_INPUT ="//input[@id='lastname']",
+            TELEPHONE_INPUT ="//input[@id='telephone']",
+            STREET_ADDRESS_INPUT ="//input[@id='street_1']",
+            CITY_INPUT ="//input[@id='city']",
+            STATE_PROVINCE_INPUT ="//select[@id='region_id']",
+            ZIP_POSTAL_CODE_INPUT ="//input[@id='zip']",
+            COUNTRY_INPUT ="//select[@id='country']",
 
-            SaveAddressButton ="//main/div/div/form//button";
+            SAVE_ADDRESS_BUTTON ="//main//form[@class='form-address-edit']//button[@data-action='save-address']";
         }
     }
 
@@ -78,38 +118,8 @@ public class Xpath {
                 ADD_TO_CART_BUTTON = "//*[@id=\"product-addtocart-button\"]";
     }
 
-    // Ivan Fedyniak
-    public interface Login{
-        String
-                EMAIL_INPUT = "//input[@name='login[username]']",
-                PASSWORD_INPUT = "//input[@name='login[password]']",
-                SIGN_IN_BUTTON = "//button[@id='send2' and @class='action login primary']",
-                FORGOT_PASSWORD_BUTTON = "//a[@class='action remind' and span[text()='Forgot Your Password?']]",
-        //"//a[@class='action remind']"
-        CREATE_ACCOUNT_BUTTON = "//a[@class='action create primary' and span[text()='Create an Account']]";
-        // "//a[@class='action create primary']"
 
 
-
-    }
-    public interface Review{
-        interface RATING{
-            String
-                    ONE_STAR_INPUT = "//input[@id='Rating_1']",
-                    TWO_STAR_INPUT = "//input[@id='Rating_2']",
-                    THREE_STAR_INPUT = "//input[@id='Rating_3']",
-                    FOUR_STAR_INPUT = "//input[@id='Rating_4']",
-                    FIVE_STAR_INPUT = "//input[@id='Rating_5']";
-        }
-        String
-                PRODUCT_REVIEWS_BUTTON = "//a[@id='tab-label-reviews-title']",
-                NICKNAME_INPUT = "//input[@id='nickname_field']",
-                SUMMARY_INPUT = "//input[@id='summary_field']",
-                REVIEW_TEXTAREA = "//textarea[@id='review_field']",
-                SUBMIT_BUTTON = "//button[@class='action submit primary' and span[text()='Submit Review']]",
-        //  "//button[@class='action submit primary']"
-        REVIEW_SUBMITTED_MESSAGE = "//div[@role='alert' and div//div[text()='You submitted your review for moderation.']]";
-    }                          // "//div[@role='alert']"
 
     // Petrenko Maryna
     public interface Woman_Tab{
