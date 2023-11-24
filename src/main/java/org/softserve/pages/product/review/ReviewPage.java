@@ -2,44 +2,45 @@ package org.softserve.pages.product.review;
 
 
 
-import org.openqa.selenium.ElementClickInterceptedException;
+
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.softserve.constants.Xpath.Review;
+import org.softserve.constants.Xpath.ReviewTemplate;
 import org.softserve.pages.base.BasePage;
 
 public class ReviewPage extends BasePage {
 
 
-    @FindBy(xpath = Review.PRODUCT_REVIEWS_BUTTON)
+    @FindBy(xpath = ReviewTemplate.PRODUCT_REVIEWS_BUTTON)
     WebElement productReviewsButton;
-    @FindBy(xpath = Review.NICKNAME_INPUT)
+    @FindBy(xpath = ReviewTemplate.NICKNAME_INPUT)
     WebElement nicknameInput;
-    @FindBy(xpath = Review.SUMMARY_INPUT)
+    @FindBy(xpath = ReviewTemplate.SUMMARY_INPUT)
     WebElement summaryInput;
-    @FindBy(xpath = Review.REVIEW_TEXTAREA)
+    @FindBy(xpath = ReviewTemplate.REVIEW_TEXTAREA)
     WebElement reviewTextarea;
-    @FindBy(xpath = Review.SUBMIT_BUTTON)
+    @FindBy(xpath = ReviewTemplate.SUBMIT_BUTTON)
     WebElement submitButton;
-
-    @FindBy(xpath = Review.REVIEW_SUBMITTED_MESSAGE)
+    @FindBy(xpath = ReviewTemplate.REVIEW_SUBMITTED_MESSAGE)
     WebElement reviewSubmittedMessage;
 
-
-    @FindBy(xpath = Review.RATING.ONE_STAR_INPUT)
+    @FindBy(xpath = ReviewTemplate.Rating.ONE_STAR_INPUT)
     static WebElement oneStarInput;
-
-    @FindBy(xpath = Review.RATING.TWO_STAR_INPUT)
+    @FindBy(xpath = ReviewTemplate.Rating.TWO_STAR_INPUT)
     static WebElement twoStarInput;
-    @FindBy(xpath = Review.RATING.THREE_STAR_INPUT)
+    @FindBy(xpath = ReviewTemplate.Rating.THREE_STAR_INPUT)
     static WebElement threeStarInput;
-    @FindBy(xpath = Review.RATING.FOUR_STAR_INPUT)
+    @FindBy(xpath = ReviewTemplate.Rating.FOUR_STAR_INPUT)
     static WebElement fourStarInput;
-    @FindBy(xpath = Review.RATING.FIVE_STAR_INPUT)
+    @FindBy(xpath = ReviewTemplate.Rating.FIVE_STAR_INPUT)
     static WebElement fiveStarInput;
+
+    //todo: provide validator (hibernate validator), change 'clickRating' method so it can get int value to select star
     public enum StarRating {
+
         ONE_STAR(oneStarInput),
         TWO_STAR(twoStarInput),
         THREE_STAR(threeStarInput),
@@ -92,7 +93,6 @@ public class ReviewPage extends BasePage {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", starInput.getValue());
         js.executeScript("arguments[0].click();", starInput.getValue());
-
         return this;
     }
 

@@ -17,8 +17,8 @@ public class Constants {
                 ADDRESS_NEW_LINK = "https://magento.softwaretestingboard.com/customer/address/new/";
     }
     public interface TestsSettings{
-        boolean CLEAR_COOKIES_AND_STORAGE = true;
-        int EXPLICITLY_WAIT = 20;
-        boolean QUIT_BROWSER = true;
+        boolean CLEAR_COOKIES_AND_STORAGE = true; // to clear cookies
+        int EXPLICITLY_WAIT = 20; // time to wait for webElement to load (if pass more we'll get TimeoutException)
+        boolean QUIT_BROWSER = true; // to close browser after tests
     }
 }

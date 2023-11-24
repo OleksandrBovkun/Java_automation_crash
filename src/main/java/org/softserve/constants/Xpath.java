@@ -1,25 +1,28 @@
 package org.softserve.constants;
 
-/**
- * todo: 1. optional - install 'CamelCase' plugin for switching cases of constants and web elements:
- *  (ctrl+alt+s) ==> marketplace ==> CamelCase ;
- *  2. set links (or examples if it covers several pages) of pages for provided xpathes;
- *  3. delete repeatable xpathes;
- *  4. try to format xpathes so they don't contain:
- *      1) ['number']: [4]::       /html/body/div[2]/header/div[2]/div[1]/a  ==>   //header//div[@class='minicart-wrapper']//a[@class='action showcart']
- *      2) unneeded html tags::   //main/div/div/form//button                ==>  //main//form[@class='form-address-edit']//button[@data-action='save-address']
- *      try to use @id, @name, @class etc instead (it can make xpath be even longer, but it's ok):
- *      in such way we make xpath more accurate
- *      pattern: 2-3 tags with parameters :: //tag1[@class='abc']//tag2[@id='qwe']//tafFinal[@id='final']
- *
- */
+
+/*
+todo:
+    1. optional - install 'CamelCase' plugin for switching cases of constants and web elements:
+        (ctrl+alt+s) ==> marketplace ==> CamelCase ;
+    2. delete repeatable xpathes;
+    3. try to format xpathes so they don't contain:
+        1) ['number']: [4]::       /html/body/div[2]/header/div[2]/div[1]/a  ==>   //header//div[@class='minicart-wrapper']//a[@class='action showcart']
+        2) unneeded html tags::   //main/div/div/form//button                ==>  //main//form[@class='form-address-edit']//button[@data-action='save-address']
+        try to use @id, @name, @class etc instead (it can make xpath be even longer, but it's ok):
+        in such way we make xpath more accurate
+        pattern: 2-3 tags with parameters :: //tag1[@class='abc']//tag2[@id='qwe']//tafFinal[@id='final']
+    4. interface name *Page if it refers to page or *Template if refers to repeatable html snippet or refers only to a part of page
+    5. set links (or examples if it covers several pages) of pages for provided xpathes :
+        use javadoc @link : {@link full path}, example:
+ */ /**{@link org.softserve.constants.Constants.Links#LOGIN_PAGE_LINK}*/ //(ctrl+ left mouse btn  on "LOGIN_PAGE_LINK" to toggle)
 
 
 public class Xpath {
-
-    // Ivan Fedyniak
-    public interface Login{
-        //https://magento.softwaretestingboard.com/customer/account/login/
+    /**
+     * @author  Ivan Fedyniak
+     * {@link org.softserve.constants.Constants.Links#LOGIN_PAGE_LINK}*/
+    public interface LoginPage {
         String
                 EMAIL_INPUT = "//input[@name='login[username]']",
                 PASSWORD_INPUT = "//input[@name='login[password]']",
@@ -27,10 +30,10 @@ public class Xpath {
                 FORGOT_PASSWORD_BUTTON = "//a[@class='action remind' and span[text()='Forgot Your Password?']]",
                 CREATE_ACCOUNT_BUTTON = "//a[@class='action create primary' and span[text()='Create an Account']]";
     }
-    public interface Review{
-        // for any product page, example:
-        // https://magento.softwaretestingboard.com/circe-hooded-ice-fleece.html
-        interface RATING{
+    /** for any product page, example:
+     * {@link org.softserve.constants.Constants.Links#PRODUCT_EXAMPLE_LINK}*/
+    public interface ReviewTemplate {
+        interface Rating {
             String
                     ONE_STAR_INPUT = "//input[@id='Rating_1']",
                     TWO_STAR_INPUT = "//input[@id='Rating_2']",
@@ -48,17 +51,17 @@ public class Xpath {
     }
 
     // Maksymovych Mykola
-    public interface Base{
+    public interface BasePage {
         // URI https://magento.softwaretestingboard.com/
         String WELCOME_MSG = "//header//li[@class='greet welcome']//span",
             WELCOME_BUTTON = "//header//div/ul/li/span/button"; // can not find on provided url!
     }
-    public interface Account{
+    public interface AccountPage {
         // https://magento.softwaretestingboard.com/customer/account/
         String MY_ACCOUNT_LABEL = "//h1[@class='page-title']//span[@class='base']",
                 ADDRESS_BOOK_LINK = "//div[@id='block-collapsible-nav']//li//a[text()='Address Book']";
     }
-    public interface Address {
+    public interface AddressPage {
         // https://magento.softwaretestingboard.com/customer/address/
         String ADDRESS_BOOK_LABEL ="//main//h1/span",
         ADD_NEW_ADDRESS_BUTTON ="//main//button[contains(.,'Add New Address')]",
@@ -76,7 +79,6 @@ public class Xpath {
             STATE_PROVINCE_INPUT ="//select[@id='region_id']",
             ZIP_POSTAL_CODE_INPUT ="//input[@id='zip']",
             COUNTRY_INPUT ="//select[@id='country']",
-
             SAVE_ADDRESS_BUTTON ="//main//form[@class='form-address-edit']//button[@data-action='save-address']";
         }
     }
@@ -138,7 +140,7 @@ public class Xpath {
     }
 
     // Sereda Olga
-    public interface SortBy {
+    public interface SortByTemplate {
         String SORT_BY_PRICE_XPATH = "//*[@id='sorter']/option[3]",
                 SORT_BY_PRODUCT_NAME_XPATH = "//*[@id='sorter']/option[2]",
                 SORT_BY_POSITION_XPATH = "//*[@id='sorter']/option[1]",

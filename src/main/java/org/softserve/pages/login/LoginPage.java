@@ -3,26 +3,29 @@ package org.softserve.pages.login;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.softserve.constants.Xpath;
 import org.softserve.pages.base.BasePage;
-
-import static org.softserve.constants.Xpath.Login;
 
 
 public class LoginPage extends BasePage {
 
-    @FindBy(xpath = Login.EMAIL_INPUT)
+    /** PageFactory @FindBy is alternative of WebElement emailInput = driver.findElement(By.xpath(Xpath.LoginPage.EMAIL_INPUT));
+        Initialization of webElements with  @FindBy annotation occur with PageFactory.initElements here:
+        {@link org.softserve.pages.base.BasePage#BasePage}
+    */
+    @FindBy(xpath = Xpath.LoginPage.EMAIL_INPUT)
     WebElement emailInput;
 
-    @FindBy(xpath = Login.PASSWORD_INPUT)
+    @FindBy(xpath = Xpath.LoginPage.PASSWORD_INPUT)
     WebElement passwordInput;
 
-    @FindBy(xpath = Login.SIGN_IN_BUTTON)
+    @FindBy(xpath = Xpath.LoginPage.SIGN_IN_BUTTON)
     WebElement signInButton;
 
-    @FindBy(xpath = Login.FORGOT_PASSWORD_BUTTON)
+    @FindBy(xpath = Xpath.LoginPage.FORGOT_PASSWORD_BUTTON)
     WebElement forgetPasswordButton;
 
-    @FindBy(xpath = Login.CREATE_ACCOUNT_BUTTON)
+    @FindBy(xpath = Xpath.LoginPage.CREATE_ACCOUNT_BUTTON)
     WebElement createAccountButton;
 
     public LoginPage(WebDriver driver) {

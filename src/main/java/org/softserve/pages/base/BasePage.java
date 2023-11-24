@@ -12,6 +12,9 @@ import java.time.Duration;
 
 import static org.softserve.constants.Constants.TestsSettings.EXPLICITLY_WAIT;
 
+/**
+ * Contains basic methods for pages. Extend your '*Page' class with BasePage.
+ */
 public abstract class BasePage {
     protected WebDriver driver;
     public BasePage(WebDriver driver){
@@ -32,6 +35,8 @@ public abstract class BasePage {
         return element.getText();
     }
 
+
+    //todo: create driver wrapper and move waits there
     public WebElement waitElementIsVisible(WebElement element){
         return new WebDriverWait(driver, Duration.ofSeconds(EXPLICITLY_WAIT)).until(ExpectedConditions.visibilityOf(element));
     }
