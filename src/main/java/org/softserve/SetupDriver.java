@@ -4,35 +4,26 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import java.time.Duration;
+import java.util.logging.Logger;
+import java.util.logging.Level;
 
 
 import static org.softserve.Config.BROWSER;
 
 public class SetupDriver {
+    private final static Logger logger = Logger.getLogger("SetupDriver LOGGER");
     public static WebDriver createDriver(){
         WebDriver driver = null;
         switch (BROWSER){
-            case "Edge":
-//                WebDriverManager.chromedriver().setup();
-//                ChromeOptions options = new ChromeOptions();
-//                options.addArguments("--remote-allow-origins=*");
-//                driver = new ChromeDriver(options);
-                driver = new EdgeDriver();
-                break;
-            case "Chrome":
+            case "Edge"    -> driver = new EdgeDriver();
+            case "Chrome"  -> driver = new ChromeDriver();
+            case "FireFox" -> driver = new FirefoxDriver();
+            default -> {
                 driver = new ChromeDriver();
-                break;
-            case "FireFox":
-                driver = new FirefoxDriver();
-                break;
-
-            default:
-//                Assert.fail("Incorrect platform, or browser name : " + BROWSER);
+                logger.log(Level.WARNING, "Driver for browser '" + BROWSER + "' not found, using chrome instead.");
+            }
         }
         driver.manage().window().maximize();
-//        driver.manage().timeouts().
-//                implicitlyWait(Duration.ofSeconds(IMPLICITLY_WAIT));
         return driver;
     }
 }
