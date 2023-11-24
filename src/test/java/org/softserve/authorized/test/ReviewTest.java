@@ -1,24 +1,22 @@
-package org.softserve;
-
-
-
+package org.softserve.authorized.test;
 
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
-import org.softserve.base.BaseTest;
+import org.softserve.authorized.base.BaseAuthorized;
+import org.softserve.pages.product.review.ReviewPage;
 import org.softserve.pages.product.review.ReviewPage.StarRating;
 
-import static org.softserve.constants.Constants.Links.LOGIN_PAGE_LINK;
 import static org.softserve.constants.Constants.Links.PRODUCT_EXAMPLE_LINK;
 
 
-class ReviewTest extends BaseTest {
+
+
+class ReviewTest extends BaseAuthorized {
+    protected ReviewPage reviewPage = new ReviewPage(driver);
 
     @Test
     public void createReviewTest() {
-        loginPage.open(LOGIN_PAGE_LINK);
-        loginPage.login(Config.LOGIN, Config.PASSWORD);
 
         reviewPage.open(PRODUCT_EXAMPLE_LINK);
         reviewPage.clickProductReviewsButton()
@@ -29,8 +27,6 @@ class ReviewTest extends BaseTest {
                 .clickSubmitButton();
 
         Assertions.assertNotNull(reviewPage.getReviewMessageElement());
-        logoutPage.logout();
-
     }
 
 
