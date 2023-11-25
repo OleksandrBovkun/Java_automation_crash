@@ -54,7 +54,7 @@ public class Xpath {
     public interface BasePage {
         // URI https://magento.softwaretestingboard.com/
         String WELCOME_MSG = "//header//li[@class='greet welcome']//span",
-            WELCOME_BUTTON = "//header//div/ul/li/span/button"; // can not find on provided url!
+            WELCOME_BUTTON = "//header//li[@class='customer-welcome']//span[@class='customer-name']//button";
     }
     public interface AccountPage {
         // https://magento.softwaretestingboard.com/customer/account/
@@ -65,7 +65,7 @@ public class Xpath {
         // https://magento.softwaretestingboard.com/customer/address/
         String ADDRESS_BOOK_LABEL ="//main//h1/span",
         ADD_NEW_ADDRESS_BUTTON ="//main//button[contains(.,'Add New Address')]",
-        ADDITIONAL_ADDRESS_FIRST_NAME_LABEL ="//main//table/tbody/tr/td[1]";
+        ADDITIONAL_ADDRESS_FIRST_NAME_LABEL ="//main//table//td[@class='col firstname']";
 
         public interface New {
             // https://magento.softwaretestingboard.com/customer/address/new/
@@ -85,7 +85,7 @@ public class Xpath {
 
     // Oleksander Bovkun
     public interface HomePage {
-        String MEN_MENU = "//*[@id=\"ui-id-5\"]",
+        String MEN_MENU = "//*[@id='ui-id-5']", //  \" ==> '
                 WOMEN_MENU = "//*[@id=\"ui-id-4\"]",
                 GEAR_MENU = "//*[@id=\"ui-id-6\"]",
                 CART_COUNT_BUTTON = "/html/body/div[2]/header/div[2]/div[1]/a",

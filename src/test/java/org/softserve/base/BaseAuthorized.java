@@ -1,4 +1,4 @@
-package org.softserve.authorized.base;
+package org.softserve.base;
 
 
 import org.junit.jupiter.api.AfterAll;
@@ -22,11 +22,17 @@ import static org.softserve.constants.Constants.TestsSettings.QUIT_BROWSER;
  * Extend your '*Test' class with BaseAuthorized if to provide authorization before tests execution.
  */
 public abstract class BaseAuthorized {
-    protected static WebDriver driver = SetupDriver.createDriver();
-    protected LoginPage loginPage = new LoginPage(driver);
-    protected LogoutPage logoutPage = new LogoutPage(driver);
+    protected static WebDriver driver;
+    protected static LoginPage loginPage;
+    protected static LogoutPage logoutPage;
 
 
+    @BeforeAll
+    public static void beforeAllMethod(){
+        driver = SetupDriver.createDriver();
+        loginPage = new LoginPage(driver);
+        logoutPage = new LogoutPage(driver);
+    }
 
     @BeforeEach
     public void beforeEachMethod(){

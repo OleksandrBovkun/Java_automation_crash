@@ -17,14 +17,18 @@ import static org.softserve.constants.Constants.TestsSettings.EXPLICITLY_WAIT;
  */
 public abstract class BasePage {
     protected WebDriver driver;
+
+    protected WebDriverWait wait;
+
     public BasePage(WebDriver driver){
         this.driver = driver;
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICITLY_WAIT));
+
         PageFactory.initElements(driver, this);
     }
     public void open(String url){
         driver.get(url);
     }
-
 
     protected void fillField(WebElement element, String inputText){
         element.clear();
@@ -35,13 +39,12 @@ public abstract class BasePage {
         return element.getText();
     }
 
-
-    //todo: create driver wrapper and move waits there
     public WebElement waitElementIsVisible(WebElement element){
-        return new WebDriverWait(driver, Duration.ofSeconds(EXPLICITLY_WAIT)).until(ExpectedConditions.visibilityOf(element));
+       return wait.until(ExpectedConditions.visibilityOf(element));
     }
+
     public WebElement waitElementIsClickable(WebElement element){
-        return new WebDriverWait(driver, Duration.ofSeconds(EXPLICITLY_WAIT)).until(ExpectedConditions.elementToBeClickable(element));
+        return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
 }

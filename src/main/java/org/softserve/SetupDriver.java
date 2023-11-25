@@ -13,7 +13,7 @@ import static org.softserve.Config.BROWSER;
 public class SetupDriver {
     private final static Logger logger = Logger.getLogger("SetupDriver LOGGER");
     public static WebDriver createDriver(){
-        WebDriver driver = null;
+        WebDriver driver;
         switch (BROWSER){
             case "Edge"    -> driver = new EdgeDriver();
             case "Chrome"  -> driver = new ChromeDriver();

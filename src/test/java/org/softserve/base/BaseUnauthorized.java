@@ -1,4 +1,4 @@
-package org.softserve.unauthorized.base;
+package org.softserve.base;
 
 
 import org.junit.jupiter.api.AfterAll;
@@ -16,6 +16,8 @@ import static org.softserve.constants.Constants.TestsSettings.QUIT_BROWSER;
 
 public abstract class BaseUnauthorized {
     protected static WebDriver driver = SetupDriver.createDriver();
+
+
 
     @AfterEach
     public void clearCookiesAndLocalStorage(){

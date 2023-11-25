@@ -12,8 +12,6 @@ import org.softserve.constants.Xpath.ReviewTemplate;
 import org.softserve.pages.base.BasePage;
 
 public class ReviewPage extends BasePage {
-
-
     @FindBy(xpath = ReviewTemplate.PRODUCT_REVIEWS_BUTTON)
     WebElement productReviewsButton;
     @FindBy(xpath = ReviewTemplate.NICKNAME_INPUT)
@@ -26,35 +24,16 @@ public class ReviewPage extends BasePage {
     WebElement submitButton;
     @FindBy(xpath = ReviewTemplate.REVIEW_SUBMITTED_MESSAGE)
     WebElement reviewSubmittedMessage;
-
     @FindBy(xpath = ReviewTemplate.Rating.ONE_STAR_INPUT)
-    static WebElement oneStarInput;
+    WebElement oneStarInput;
     @FindBy(xpath = ReviewTemplate.Rating.TWO_STAR_INPUT)
-    static WebElement twoStarInput;
+    WebElement twoStarInput;
     @FindBy(xpath = ReviewTemplate.Rating.THREE_STAR_INPUT)
-    static WebElement threeStarInput;
+    WebElement threeStarInput;
     @FindBy(xpath = ReviewTemplate.Rating.FOUR_STAR_INPUT)
-    static WebElement fourStarInput;
+    WebElement fourStarInput;
     @FindBy(xpath = ReviewTemplate.Rating.FIVE_STAR_INPUT)
-    static WebElement fiveStarInput;
-
-    //todo: provide validator (hibernate validator), change 'clickRating' method so it can get int value to select star
-    public enum StarRating {
-
-        ONE_STAR(oneStarInput),
-        TWO_STAR(twoStarInput),
-        THREE_STAR(threeStarInput),
-        FOUR_STAR(fourStarInput),
-        FIVE_STAR(fiveStarInput);
-        private WebElement value;
-        StarRating(WebElement star) {
-            this.value = star;
-        }
-        public WebElement getValue() {
-            return value;
-        }
-    }
-
+    WebElement fiveStarInput;
 
     public ReviewPage(WebDriver driver) {
         super(driver);
@@ -88,13 +67,40 @@ public class ReviewPage extends BasePage {
         return this;
     }
 
-    public ReviewPage clickRating(StarRating starInput){
-        waitElementIsClickable(starInput.getValue());
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", starInput.getValue());
-        js.executeScript("arguments[0].click();", starInput.getValue());
+    public ReviewPage clickRatingOneStar(){
+        WebElement star = oneStarInput;
+        clickStar(star);
         return this;
     }
+    public ReviewPage clickRatingTwoStar(){
+        WebElement star = twoStarInput;
+        clickStar(star);
+        return this;
+    }
+    public ReviewPage clickRatingThreeStar(){
+        WebElement star = threeStarInput;
+        clickStar(star);
+        return this;
+    }
+    public ReviewPage clickRatingFourStar(){
+        WebElement star = fourStarInput;
+        clickStar(star);
+        return this;
+    }
+    public ReviewPage clickRatingFiveStar(){
+        WebElement star = fiveStarInput;
+        clickStar(star);
+        return this;
+    }
+
+    private ReviewPage clickStar(WebElement star){
+        waitElementIsClickable(star);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", star);
+        js.executeScript("arguments[0].click();", star);
+        return this;
+    }
+
 
     public WebElement getReviewMessageElement(){
         return reviewSubmittedMessage;
