@@ -14,19 +14,19 @@ public class LoginPage extends BasePage {
         {@link org.softserve.pages.base.BasePage#BasePage}
     */
     @FindBy(xpath = Xpath.LoginPage.EMAIL_INPUT)
-    WebElement emailInput;
+    private WebElement emailInput;
 
     @FindBy(xpath = Xpath.LoginPage.PASSWORD_INPUT)
-    WebElement passwordInput;
+    private WebElement passwordInput;
 
     @FindBy(xpath = Xpath.LoginPage.SIGN_IN_BUTTON)
-    WebElement signInButton;
+    private WebElement signInButton;
 
     @FindBy(xpath = Xpath.LoginPage.FORGOT_PASSWORD_BUTTON)
-    WebElement forgetPasswordButton;
+    private WebElement forgetPasswordButton;
 
     @FindBy(xpath = Xpath.LoginPage.CREATE_ACCOUNT_BUTTON)
-    WebElement createAccountButton;
+    private WebElement createAccountButton;
 
     public LoginPage(WebDriver driver) {
         super(driver);
