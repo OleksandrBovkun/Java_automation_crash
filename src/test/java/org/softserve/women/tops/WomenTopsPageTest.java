@@ -1,9 +1,10 @@
-package org.softserve.pages.women.tops;
+package org.softserve.women.tops;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.softserve.SetupDriver;
+import org.softserve.pages.women.tops.WomenTopsPage;
 
 import java.util.ArrayList;
 import java.util.List;

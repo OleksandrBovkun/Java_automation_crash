@@ -50,25 +50,33 @@ public class Xpath {
                 REVIEW_SUBMITTED_MESSAGE = "//div[@role='alert' and div//div[text()='You submitted your review for moderation.']]";
     }
 
-    // Maksymovych Mykola
+    /**
+     * @author  Maksymovych Mykola
+     * {@link org.softserve.constants.Constants.Links#MAIN_PAGE_LINK}*/
     public interface BasePage {
-        // URI https://magento.softwaretestingboard.com/
         String WELCOME_MSG = "//header//li[@class='greet welcome']//span",
             WELCOME_BUTTON = "//header//li[@class='customer-welcome']//span[@class='customer-name']//button";
     }
+    /**
+     * @author  Maksymovych Mykola
+     * {@link org.softserve.constants.Constants.Links#ACCOUNT_LINK}*/
     public interface AccountPage {
-        // https://magento.softwaretestingboard.com/customer/account/
         String MY_ACCOUNT_LABEL = "//h1[@class='page-title']//span[@class='base']",
                 ADDRESS_BOOK_LINK = "//div[@id='block-collapsible-nav']//li//a[text()='Address Book']";
     }
+    /**
+     * @author  Maksymovych Mykola
+     * {@link org.softserve.constants.Constants.Links#ADDRESS_LINK}*/
     public interface AddressPage {
-        // https://magento.softwaretestingboard.com/customer/address/
         String ADDRESS_BOOK_LABEL ="//main//h1/span",
         ADD_NEW_ADDRESS_BUTTON ="//main//button[contains(.,'Add New Address')]",
-        ADDITIONAL_ADDRESS_FIRST_NAME_LABEL ="//main//table//td[@class='col firstname']";
+        ADDITIONAL_ADDRESS_FIRST_NAME_LABEL ="//main//table//td[@class='col firstname']",
+        DEFAULT_ADDRESS_FIRST_NAME_LABEL ="//main//div[@class=\"box box-address-billing\"]//address";
 
+        /**
+         * @author  Maksymovych Mykola
+         * {@link org.softserve.constants.Constants.Links#ADDRESS_NEW_LINK}*/
         public interface New {
-            // https://magento.softwaretestingboard.com/customer/address/new/
             String ADD_NEW_ADDRESS_LABEL ="//main//h1/span",
 
             FIRST_NAME_INPUT ="//input[@id='firstname']",
