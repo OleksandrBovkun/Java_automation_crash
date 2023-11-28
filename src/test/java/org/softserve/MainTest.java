@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.softserve.constants.XPath;
 
+import javax.xml.xpath.XPath;
 import java.time.Duration;
 import static org.junit.jupiter.api.Assertions.*;
 
