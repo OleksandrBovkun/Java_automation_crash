@@ -30,6 +30,10 @@ public abstract class BasePage {
         driver.get(url);
     }
 
+    public void fullSizeScreen(){
+        driver.manage().window().maximize();
+    }
+
     protected void fillField(WebElement element, String inputText){
         element.clear();
         element.sendKeys(inputText);
