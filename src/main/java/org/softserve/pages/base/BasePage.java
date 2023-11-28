@@ -1,14 +1,12 @@
 package org.softserve.pages.base;
 
 import org.openqa.selenium.WebDriver;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-
 
 import static org.softserve.constants.Constants.TestsSettings.EXPLICITLY_WAIT;
 
@@ -17,7 +15,6 @@ import static org.softserve.constants.Constants.TestsSettings.EXPLICITLY_WAIT;
  */
 public abstract class BasePage {
     protected WebDriver driver;
-
     protected WebDriverWait wait;
 
     public BasePage(WebDriver driver){
@@ -43,11 +40,11 @@ public abstract class BasePage {
         return element.getText();
     }
 
-    public WebElement waitElementIsVisible(WebElement element){
+    protected WebElement waitElementIsVisible(WebElement element){
        return wait.until(ExpectedConditions.visibilityOf(element));
     }
 
-    public WebElement waitElementIsClickable(WebElement element){
+    protected WebElement waitElementIsClickable(WebElement element){
         return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
