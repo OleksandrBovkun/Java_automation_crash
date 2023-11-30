@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.softserve.SetupDriver;
+import org.softserve.base.BaseUnauthorized;
 import org.softserve.pages.women.tops.WomenTopsPage;
 
 import java.util.ArrayList;
@@ -13,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.softserve.constants.Constants.Links.WOMEN_TOPS_LINK;
 
 // Sereda Olga
-class WomenTopsPageTest {
+class WomenTopsPageTest extends BaseUnauthorized {
     protected static WomenTopsPage womenTopsPage;
     protected static WebDriver driver;
     private List<Integer> actual = new ArrayList<>();
@@ -27,6 +28,7 @@ class WomenTopsPageTest {
 
     @Test
     public void sortByPriceToHigher(){
+        womenTopsPage.clickSortBy();
         womenTopsPage.clickSortByPrice();
         actual = womenTopsPage.getPriceValues();
         boolean isFirstPriceTheLowest = true;

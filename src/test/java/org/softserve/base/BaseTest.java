@@ -13,8 +13,8 @@ import org.softserve.pages.login.LoginPage;
 import org.softserve.pages.logout.LogoutPage;
 import org.softserve.pages.product.review.ReviewPage;
 
-import static org.softserve.Config.QUIT_BROWSER;
-import static org.softserve.constants.Constant.TestsSettings.CLEAR_COOKIES_AND_STORAGE;
+import static org.softserve.constants.Constants.TestsSettings.CLEAR_COOKIES_AND_STORAGE;
+import static org.softserve.constants.Constants.TestsSettings.QUIT_BROWSER;
 
 
 public class BaseTest {

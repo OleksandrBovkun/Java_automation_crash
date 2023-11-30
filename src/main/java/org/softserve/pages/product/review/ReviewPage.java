@@ -55,11 +55,12 @@ public class ReviewPage extends BasePage {
         fillField(summaryInput, summary);
         return this;
     }
-    public ReviewPage fillReview(String review){
+    public ReviewPage fillReview(WebElement reviewTextarea, String review){
         waitElementIsVisible(reviewTextarea);
         fillField(reviewTextarea, review);
         return this;
     }
+
 
     public ReviewPage clickSubmitButton(){
         waitElementIsClickable(submitButton);
