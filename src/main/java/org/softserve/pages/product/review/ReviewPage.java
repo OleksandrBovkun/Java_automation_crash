@@ -13,27 +13,27 @@ import org.softserve.pages.base.BasePage;
 
 public class ReviewPage extends BasePage {
     @FindBy(xpath = ReviewTemplate.PRODUCT_REVIEWS_BUTTON)
-    WebElement productReviewsButton;
+    private WebElement productReviewsButton;
     @FindBy(xpath = ReviewTemplate.NICKNAME_INPUT)
-    WebElement nicknameInput;
+    private WebElement nicknameInput;
     @FindBy(xpath = ReviewTemplate.SUMMARY_INPUT)
-    WebElement summaryInput;
+    private WebElement summaryInput;
     @FindBy(xpath = ReviewTemplate.REVIEW_TEXTAREA)
-    WebElement reviewTextarea;
+    private WebElement reviewTextarea;
     @FindBy(xpath = ReviewTemplate.SUBMIT_BUTTON)
-    WebElement submitButton;
+    private WebElement submitButton;
     @FindBy(xpath = ReviewTemplate.REVIEW_SUBMITTED_MESSAGE)
-    WebElement reviewSubmittedMessage;
+    private WebElement reviewSubmittedMessage;
     @FindBy(xpath = ReviewTemplate.Rating.ONE_STAR_INPUT)
-    WebElement oneStarInput;
+    private WebElement oneStarInput;
     @FindBy(xpath = ReviewTemplate.Rating.TWO_STAR_INPUT)
-    WebElement twoStarInput;
+    private WebElement twoStarInput;
     @FindBy(xpath = ReviewTemplate.Rating.THREE_STAR_INPUT)
-    WebElement threeStarInput;
+    private WebElement threeStarInput;
     @FindBy(xpath = ReviewTemplate.Rating.FOUR_STAR_INPUT)
-    WebElement fourStarInput;
+    private WebElement fourStarInput;
     @FindBy(xpath = ReviewTemplate.Rating.FIVE_STAR_INPUT)
-    WebElement fiveStarInput;
+    private WebElement fiveStarInput;
 
     public ReviewPage(WebDriver driver) {
         super(driver);
@@ -55,11 +55,12 @@ public class ReviewPage extends BasePage {
         fillField(summaryInput, summary);
         return this;
     }
-    public ReviewPage fillReview(String review){
+    public ReviewPage fillReview(WebElement reviewTextarea, String review){
         waitElementIsVisible(reviewTextarea);
         fillField(reviewTextarea, review);
         return this;
     }
+
 
     public ReviewPage clickSubmitButton(){
         waitElementIsClickable(submitButton);

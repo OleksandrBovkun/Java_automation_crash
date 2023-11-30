@@ -50,25 +50,33 @@ public class Xpath {
                 REVIEW_SUBMITTED_MESSAGE = "//div[@role='alert' and div//div[text()='You submitted your review for moderation.']]";
     }
 
-    // Maksymovych Mykola
+    /**
+     * @author  Maksymovych Mykola
+     * {@link org.softserve.constants.Constants.Links#MAIN_PAGE_LINK}*/
     public interface BasePage {
-        // URI https://magento.softwaretestingboard.com/
         String WELCOME_MSG = "//header//li[@class='greet welcome']//span",
             WELCOME_BUTTON = "//header//li[@class='customer-welcome']//span[@class='customer-name']//button";
     }
+    /**
+     * @author  Maksymovych Mykola
+     * {@link org.softserve.constants.Constants.Links#ACCOUNT_LINK}*/
     public interface AccountPage {
-        // https://magento.softwaretestingboard.com/customer/account/
         String MY_ACCOUNT_LABEL = "//h1[@class='page-title']//span[@class='base']",
                 ADDRESS_BOOK_LINK = "//div[@id='block-collapsible-nav']//li//a[text()='Address Book']";
     }
+    /**
+     * @author  Maksymovych Mykola
+     * {@link org.softserve.constants.Constants.Links#ADDRESS_LINK}*/
     public interface AddressPage {
-        // https://magento.softwaretestingboard.com/customer/address/
         String ADDRESS_BOOK_LABEL ="//main//h1/span",
         ADD_NEW_ADDRESS_BUTTON ="//main//button[contains(.,'Add New Address')]",
-        ADDITIONAL_ADDRESS_FIRST_NAME_LABEL ="//main//table//td[@class='col firstname']";
+        ADDITIONAL_ADDRESS_FIRST_NAME_LABEL ="//main//table//td[@class='col firstname']",
+        DEFAULT_ADDRESS_FIRST_NAME_LABEL ="//main//div[@class=\"box box-address-billing\"]//address";
 
+        /**
+         * @author  Maksymovych Mykola
+         * {@link org.softserve.constants.Constants.Links#ADDRESS_NEW_LINK}*/
         public interface New {
-            // https://magento.softwaretestingboard.com/customer/address/new/
             String ADD_NEW_ADDRESS_LABEL ="//main//h1/span",
 
             FIRST_NAME_INPUT ="//input[@id='firstname']",
@@ -124,7 +132,7 @@ public class Xpath {
 
 
     // Petrenko Maryna
-    public interface Woman_Tab{
+    public interface WomanTab{
         String
                 WOMAN_ITEM = "//a[contains(@href, 'women') and @role='menuitem' and contains(., 'Women')]",
                 TOPS_ITEM = "//li[@class='item']/a[contains(@href, 'women/tops-women.html') and text()='Tops']",
@@ -133,17 +141,20 @@ public class Xpath {
                 MAIN_CONTENT = "//main[@id='maincontent' and @class='page-main']",
                 DETAILS_TAB = "//div[@class='product data items']//div[@class='data item title active' and contains(a, 'Details')]",
                 DETAILS_CONTENT = "//div[@class='data item content' and @id='description']",
-                MORE_INFO_TAB = "//div[@class='product data items']//div[@class='data item title active' and contains(a, 'More Information ')]",
+                MORE_INFO_TAB = "//div[@class='product data items']//div[@class='data item title active' and contains(a, 'More Information')]",
                 MORE_INFO_CONTENT = "//div[@class='data item content' and @id='additional']",
-                REVIEWS_TAB = "//div[@class='product data items']//div[@class='data item title active' and contains(a, 'Reviews ')]",
+                REVIEWS_TAB = "//div[@class='product data items']//div[@class='data item title active' and contains(a, 'Reviews')]",
                 REVIEWS_CONTENT = "//div[@class='data item content' and @id='reviews']";
     }
 
     // Sereda Olga
     public interface SortByTemplate {
-        String SORT_BY_PRICE_XPATH = "//*[@id='sorter']/option[3]",
+
+        String  SORT_BY = "//*[@id='sorter']",
+                SORT_BY_PRICE_XPATH = "//*[@id='sorter']/option[3]",
                 SORT_BY_PRODUCT_NAME_XPATH = "//*[@id='sorter']/option[2]",
                 SORT_BY_POSITION_XPATH = "//*[@id='sorter']/option[1]",
+                SORT_DROPDOWN_BUTTON = "//div[@class='toolbar toolbar-products'][1]//select[@id='sorter'][1]",
                 DESCENDING_DIRECTION_XPATH = "//a[contains(.,'Set Descending Direction')]",
                 PRICE_VALUES_XPATH = "//div[@data-role='priceBox']/span/span/span[2]",
                 SORTER_ID = "sorter";
