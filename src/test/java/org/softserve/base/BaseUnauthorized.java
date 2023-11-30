@@ -3,9 +3,12 @@ package org.softserve.base;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.softserve.SetupDriver;
+import org.softserve.pages.login.LoginPage;
+import org.softserve.pages.logout.LogoutPage;
 
 import static org.softserve.constants.Constants.TestsSettings.CLEAR_COOKIES_AND_STORAGE;
 import static org.softserve.constants.Constants.TestsSettings.QUIT_BROWSER;
@@ -15,16 +18,20 @@ import static org.softserve.constants.Constants.TestsSettings.QUIT_BROWSER;
  */
 
 public abstract class BaseUnauthorized {
-    protected static WebDriver driver = SetupDriver.createDriver();
+    protected static WebDriver driver;// = SetupDriver.createDriver();
 
+    @BeforeAll
+    public static void beforeAllMethod(){
+        driver = SetupDriver.createDriver();
 
+    }
 
     @AfterEach
     public void clearCookiesAndLocalStorage(){
         if (CLEAR_COOKIES_AND_STORAGE) {
             JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
             driver.manage().deleteAllCookies();
-//            javascriptExecutor.executeScript("window.sessionStorage.clear()");
+            javascriptExecutor.executeScript("window.sessionStorage.clear()");
         }
     }
 
