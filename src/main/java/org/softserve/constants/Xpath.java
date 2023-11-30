@@ -132,7 +132,7 @@ public class Xpath {
 
 
     // Petrenko Maryna
-    public interface Woman_Tab{
+    public interface WomanTab{
         String
                 WOMAN_ITEM = "//a[contains(@href, 'women') and @role='menuitem' and contains(., 'Women')]",
                 TOPS_ITEM = "//li[@class='item']/a[contains(@href, 'women/tops-women.html') and text()='Tops']",
@@ -141,15 +141,17 @@ public class Xpath {
                 MAIN_CONTENT = "//main[@id='maincontent' and @class='page-main']",
                 DETAILS_TAB = "//div[@class='product data items']//div[@class='data item title active' and contains(a, 'Details')]",
                 DETAILS_CONTENT = "//div[@class='data item content' and @id='description']",
-                MORE_INFO_TAB = "//div[@class='product data items']//div[@class='data item title active' and contains(a, 'More Information ')]",
+                MORE_INFO_TAB = "//div[@class='product data items']//div[@class='data item title active' and contains(a, 'More Information')]",
                 MORE_INFO_CONTENT = "//div[@class='data item content' and @id='additional']",
-                REVIEWS_TAB = "//div[@class='product data items']//div[@class='data item title active' and contains(a, 'Reviews ')]",
+                REVIEWS_TAB = "//div[@class='product data items']//div[@class='data item title active' and contains(a, 'Reviews')]",
                 REVIEWS_CONTENT = "//div[@class='data item content' and @id='reviews']";
     }
 
     // Sereda Olga
     public interface SortByTemplate {
-        String SORT_BY_PRICE_XPATH = "//div[@class='toolbar toolbar-products'][1]//select[@id='sorter'][1]/option[1]",
+
+        String  SORT_BY = "//*[@id='sorter']",
+                SORT_BY_PRICE_XPATH = "//*[@id='sorter']/option[3]",
                 SORT_BY_PRODUCT_NAME_XPATH = "//*[@id='sorter']/option[2]",
                 SORT_BY_POSITION_XPATH = "//*[@id='sorter']/option[1]",
                 SORT_DROPDOWN_BUTTON = "//div[@class='toolbar toolbar-products'][1]//select[@id='sorter'][1]",

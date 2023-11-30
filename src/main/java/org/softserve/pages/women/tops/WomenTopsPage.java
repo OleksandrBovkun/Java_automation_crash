@@ -14,6 +14,8 @@ import static org.softserve.constants.Xpath.SortByTemplate.*;
 // Sereda Olga
 public class WomenTopsPage extends BasePage {
 
+    @FindBy(xpath = SORT_BY)
+    private WebElement sortBy;
     @FindBy(xpath = SORT_BY_PRICE_XPATH)
     private WebElement sortByPrice;
     @FindBy(xpath = SORT_BY_PRODUCT_NAME_XPATH)
@@ -29,7 +31,7 @@ public class WomenTopsPage extends BasePage {
     public WomenTopsPage(WebDriver driver) {
         super(driver);
     }
-
+    public void clickSortBy(){sortBy.click();}
     public void clickSortByPrice(){sortByPrice.click();}
     public void clickSortByProductName(){sortByProductName.click();}
     public void clickSortByPosition(){sortByPosition.click();}

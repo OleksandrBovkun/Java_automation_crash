@@ -26,6 +26,7 @@ class WomenTopsPageTest extends BaseUnauthorized {
 
     @Test
     public void sortByPriceToHigher(){
+        womenTopsPage.clickSortBy();
         womenTopsPage.clickSortByPrice();
         actual = womenTopsPage.getPriceValues();
         boolean isFirstPriceTheLowest = true;

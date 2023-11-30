@@ -32,7 +32,7 @@ class ReviewTest extends BaseAuthorized {
                 .clickRatingFiveStar()
                 .fillNickname("test")
                 .fillSummary("summary")
-                .fillReview("Review")
+//                .fillReview(yourReviewTextareaElement, "Review")
                 .clickSubmitButton();
 
         Assertions.assertNotNull(reviewPage.getReviewMessageElement());
