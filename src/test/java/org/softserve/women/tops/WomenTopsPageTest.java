@@ -16,11 +16,9 @@ import static org.softserve.constants.Constants.Links.WOMEN_TOPS_LINK;
 // Sereda Olga
 class WomenTopsPageTest extends BaseUnauthorized {
     protected static WomenTopsPage womenTopsPage;
-    protected static WebDriver driver;
     private List<Integer> actual = new ArrayList<>();
     @BeforeAll
     public static void beforeAllMethod(){
-        driver = SetupDriver.createDriver();
         womenTopsPage = new WomenTopsPage(driver);
         womenTopsPage.open(WOMEN_TOPS_LINK);
         womenTopsPage.fullSizeScreen();

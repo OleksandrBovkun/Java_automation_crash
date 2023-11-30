@@ -21,6 +21,7 @@ class ReviewTest extends BaseAuthorized {
     @BeforeAll
     public static void baseAuthorizedBeforeAll(){
         reviewPage = new ReviewPage(driver);
+        reviewPage.fullSizeScreen();
     }
 
     @Test

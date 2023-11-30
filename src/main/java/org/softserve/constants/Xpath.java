@@ -149,10 +149,12 @@ public class Xpath {
 
     // Sereda Olga
     public interface SortByTemplate {
+
         String  SORT_BY = "//*[@id='sorter']",
                 SORT_BY_PRICE_XPATH = "//*[@id='sorter']/option[3]",
                 SORT_BY_PRODUCT_NAME_XPATH = "//*[@id='sorter']/option[2]",
                 SORT_BY_POSITION_XPATH = "//*[@id='sorter']/option[1]",
+                SORT_DROPDOWN_BUTTON = "//div[@class='toolbar toolbar-products'][1]//select[@id='sorter'][1]",
                 DESCENDING_DIRECTION_XPATH = "//a[contains(.,'Set Descending Direction')]",
                 PRICE_VALUES_XPATH = "//div[@data-role='priceBox']/span/span/span[2]",
                 SORTER_ID = "sorter";
