@@ -144,3 +144,5 @@ replay_pid*
 # End of https://www.toptal.com/developers/gitignore/api/intellij,java,test
 
 src/main/java/org/softserve/Config.java
+/target/classes/config.json
+/src/main/resources/config.json
