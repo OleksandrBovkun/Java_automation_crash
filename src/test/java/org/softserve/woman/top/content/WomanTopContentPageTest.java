@@ -23,6 +23,7 @@ class WomanTopContentPageTest extends BaseUnauthorized {
     public static void beforeAllMethod(){
         womanTopContentPage = new WomanTopContentPage(driver);
         womanTopContentPage.open(MAIN_PAGE_LINK);
+        womanTopContentPage.fullSizeScreen();
 
     }
 

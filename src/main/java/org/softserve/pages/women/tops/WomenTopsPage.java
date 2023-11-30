@@ -1,10 +1,14 @@
 package org.softserve.pages.women.tops;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.softserve.pages.base.BasePage;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,13 +30,23 @@ public class WomenTopsPage extends BasePage {
     private WebElement descendingDirection;
     @FindBy(xpath = PRICE_VALUES_XPATH)
     private List<WebElement> priceValues;
-
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 
     public WomenTopsPage(WebDriver driver) {
         super(driver);
     }
-    public void clickSortBy(){sortBy.click();}
-    public void clickSortByPrice(){sortByPrice.click();}
+    public void clickSortBy(){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(SORT_BY)));
+        sortBy.click();
+    }
+
+    public void clickSortByPrice(){
+
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(SORT_BY_PRICE_XPATH)));
+        sortByPrice.click();
+
+    }
+
     public void clickSortByProductName(){sortByProductName.click();}
     public void clickSortByPosition(){sortByPosition.click();}
     public void clickDescendingDirection(){descendingDirection.click();}
