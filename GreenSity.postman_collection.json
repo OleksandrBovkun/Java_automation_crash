@@ -1,0 +1,314 @@
+{
+	"info": {
+		"_postman_id": "b0115384-41f8-4331-ab37-cac584701a88",
+		"name": "GreenSity",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16392687"
+	},
+	"item": [
+		{
+			"name": "own-controller",
+			"item": [
+				{
+					"name": "Sign In",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"{{email}}\",\r\n  \"password\": \"{{password}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_base_user}}ownSecurity/signIn",
+							"host": [
+								"{{url_base_user}}ownSecurity"
+							],
+							"path": [
+								"signIn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Updating access token by refresh token",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_base_user}}ownSecurity/updateAccessToken?refreshToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtdWtvbGExNDE4QGdtYWlsLmNvbSIsInJvbGUiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTcwMTg1NzE5NywiZXhwIjoxNzAxODkzMTk3fQ.EESIrf-A6vx4OUmvSAQXksSvwfeVxQrkhW3GITKwtiU",
+							"host": [
+								"{{url_base_user}}ownSecurity"
+							],
+							"path": [
+								"updateAccessToken"
+							],
+							"query": [
+								{
+									"key": "refreshToken",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtdWtvbGExNDE4QGdtYWlsLmNvbSIsInJvbGUiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTcwMTg1NzE5NywiZXhwIjoxNzAxODkzMTk3fQ.EESIrf-A6vx4OUmvSAQXksSvwfeVxQrkhW3GITKwtiU"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get password status for current user.",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test('User has password', function () {\r",
+									"    pm.expect(pm.response.json().hasPassword).to.eql(true);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtdWtvbGExNDE4QGdtYWlsLmNvbSIsInJvbGUiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTcwMTg2NTYxMSwiZXhwIjoxNzAxODcyODExfQ.xOW88HHkVcsWlFbDDcg4Z6BPiOzlGF65ffmWjcSgdFU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_base_user}}ownSecurity/password-status",
+							"host": [
+								"{{url_base_user}}ownSecurity"
+							],
+							"path": [
+								"password-status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response time is less than 500ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+									"});\r",
+									"\r",
+									"var schema = {\r",
+									"    \"items\": {\r",
+									"        \"type\": \"string\"\r",
+									"    }\r",
+									"};\r",
+									"\r",
+									"var data1 = [\"myemail@google.com\", \"My Password\"];\r",
+									"var data2 = [\"myemail2@google.com\", \"pass\"];\r",
+									"\r",
+									"pm.test('Test schema is valid', function () {\r",
+									"    pm.expect(tv4.validate(data1, schema)).to.be.true;\r",
+									"    pm.expect(tv4.validate(data2, schema)).to.be.true;\r",
+									"});\r",
+									"\r",
+									"pm.test('Real schema is valid', function () {\r",
+									"    pm.expect(tv4.validate(pm.response.json(), schema)).to.be.true;\r",
+									"});\r",
+									"\r",
+									"pm.test('User name valid', function () {\r",
+									"    pm.expect(pm.response.json().name).to.eql(\"Nikolay001\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtdWtvbGExNDE4QGdtYWlsLmNvbSIsInJvbGUiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTcwMTg2NTYxMSwiZXhwIjoxNzAxODcyODExfQ.xOW88HHkVcsWlFbDDcg4Z6BPiOzlGF65ffmWjcSgdFU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_base_user}}user",
+							"host": [
+								"{{url_base_user}}user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find current user by email",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"verify name\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.name).to.equals(\"Nikolay001\");\r",
+									"});\r",
+									"pm.test(\"verify role\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.role).to.eql(\"ROLE_USER\");\r",
+									"});\r",
+									"pm.test(\"verify emailNotification\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.emailNotification).to.eql(\"DISABLED\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtdWtvbGExNDE4QGdtYWlsLmNvbSIsInJvbGUiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTcwMTg2NTYxMSwiZXhwIjoxNzAxODcyODExfQ.xOW88HHkVcsWlFbDDcg4Z6BPiOzlGF65ffmWjcSgdFU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_base_user}}user/findByEmail?email={{email}}",
+							"host": [
+								"{{url_base_user}}user"
+							],
+							"path": [
+								"findByEmail"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "{{email}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "order-controller",
+			"item": [
+				{
+					"name": "Get personal data",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"verify firstName\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.firstName).to.equals(\"Nikolay001\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtdWtvbGExNDE4QGdtYWlsLmNvbSIsInJvbGUiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTcwMTg2NTYxMSwiZXhwIjoxNzAxODcyODExfQ.xOW88HHkVcsWlFbDDcg4Z6BPiOzlGF65ffmWjcSgdFU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_base_ubs}}ubs/personal-data",
+							"host": [
+								"{{url_base_ubs}}ubs"
+							],
+							"path": [
+								"personal-data"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url_base_user",
+			"value": "https://greencity-user.greencity.social/"
+		},
+		{
+			"key": "url_base_ubs",
+			"value": "https://greencity-ubs.greencity.social/",
+			"type": "string"
+		},
+		{
+			"key": "email",
+			"value": "f secret email",
+			"type": "string"
+		},
+		{
+			"key": "password",
+			"value": "LS52.i!cJ4m8sH",
+			"type": "string"
+		},
+		{
+			"key": "name",
+			"value": "Nikolay001",
+			"type": "string"
+		}
+	]
+}
