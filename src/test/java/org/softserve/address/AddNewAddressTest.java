@@ -1,6 +1,9 @@
 package org.softserve.address;
 
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
 import org.softserve.base.BaseAuthorized;
 import org.softserve.pages.account.AccountPage;
 import org.softserve.pages.address.AddressPage;
@@ -19,7 +22,7 @@ public class AddNewAddressTest extends BaseAuthorized {
         addressPage = new AddressPage(driver);
         newAddressPage = new NewAddressPage(driver);
     }
-    @Disabled
+
     @Test
     @Order(1)
     public void Should_CreateFirstAddress_When_InformationIsCorrect(){
@@ -39,7 +42,7 @@ public class AddNewAddressTest extends BaseAuthorized {
             Assertions.assertEquals(firstName, actual);
         }
     }
-    @Disabled
+
     @Test
     public void Should_CreateNewAddress_When_InformationIsCorrect(){
         var firstName = "Naruto2";
