@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="921d1d3c-f93c-44a8-b30b-80d11796e9e7" name="Changes" comment="add second task first part">
+    <list default="true" id="921d1d3c-f93c-44a8-b30b-80d11796e9e7" name="Changes" comment="add fixes to first task">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -159,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701979248521</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add fixes to first task">
+      <created>1701980589700</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1701980589700</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,7 +184,8 @@
     <MESSAGE value="first task" />
     <MESSAGE value="changes to first task" />
     <MESSAGE value="add second task first part" />
-    <option name="LAST_COMMIT_MESSAGE" value="add second task first part" />
+    <MESSAGE value="add fixes to first task" />
+    <option name="LAST_COMMIT_MESSAGE" value="add fixes to first task" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Java_automation_crash$Person.ic" NAME="Person Coverage Results" MODIFIED="1701977070449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
