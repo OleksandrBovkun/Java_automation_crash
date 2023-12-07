@@ -1,13 +1,7 @@
 package org.task3;
 
 
-import org.task3.Student;
-import org.task3.Task1;
-
 import java.util.*;
-
-
-
 
 public class Main {
     public static void main(String[] args) {
@@ -32,7 +26,7 @@ public class Main {
         Map<String, String> personMap = new HashMap<>();
         personMap.put("Smith", "Alice");
         personMap.put("Johnson", "Alice");
-        personMap.put("Williams", "Bob");
+        personMap.put("Johnson", "Bob");
         personMap.put("Jones", "Catherine");
         personMap.put("Brown", "David");
         personMap.put("Davis", "Emma");
