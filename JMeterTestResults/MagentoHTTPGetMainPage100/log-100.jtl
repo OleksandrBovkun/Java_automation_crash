@@ -1,0 +1,301 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1701943781992,655,HTTP Request,200,OK,GroupUsers1 1-68,text,true,,80456,268,96,96,https://magento.softwaretestingboard.com/,63,0,25
+1701943781992,63,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-68,,true,,714,134,96,96,http://magento.softwaretestingboard.com/,63,0,25
+1701943782055,592,HTTP Request-1,200,OK,GroupUsers1 1-68,text,true,,79742,134,96,96,https://magento.softwaretestingboard.com/,585,0,65
+1701943781794,1071,HTTP Request,200,OK,GroupUsers1 1-48,text,true,,80445,268,99,99,https://magento.softwaretestingboard.com/,60,0,24
+1701943781794,60,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-48,,true,,714,134,99,99,http://magento.softwaretestingboard.com/,60,0,24
+1701943781855,1010,HTTP Request-1,200,OK,GroupUsers1 1-48,text,true,,79731,134,99,99,https://magento.softwaretestingboard.com/,834,0,249
+1701943782161,711,HTTP Request,200,OK,GroupUsers1 1-86,text,true,,80459,268,98,98,https://magento.softwaretestingboard.com/,51,0,19
+1701943782161,51,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-86,,true,,716,134,98,98,http://magento.softwaretestingboard.com/,51,0,19
+1701943782213,659,HTTP Request-1,200,OK,GroupUsers1 1-86,text,true,,79743,134,98,98,https://magento.softwaretestingboard.com/,654,0,58
+1701943782735,675,HTTP Request,500,Internal Server Error,GroupUsers1 1-99,text,false,Test failed: text expected to contain /My Cart/,2072,268,97,97,https://magento.softwaretestingboard.com/,61,0,24
+1701943782735,61,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-99,,true,,724,134,97,97,http://magento.softwaretestingboard.com/,61,0,24
+1701943782797,613,HTTP Request-1,500,Internal Server Error,GroupUsers1 1-99,text,false,,1348,134,97,97,https://magento.softwaretestingboard.com/,613,0,62
+1701943782220,1455,HTTP Request,200,OK,GroupUsers1 1-92,text,true,,80457,268,96,96,https://magento.softwaretestingboard.com/,60,0,26
+1701943782220,60,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-92,,true,,718,134,96,96,http://magento.softwaretestingboard.com/,60,0,26
+1701943782281,1394,HTTP Request-1,200,OK,GroupUsers1 1-92,text,true,,79739,134,96,96,https://magento.softwaretestingboard.com/,1389,0,65
+1701943781472,2210,HTTP Request,200,OK,GroupUsers1 1-5,text,true,,80445,268,95,95,https://magento.softwaretestingboard.com/,148,0,111
+1701943781472,148,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-5,,true,,718,134,95,95,http://magento.softwaretestingboard.com/,148,0,111
+1701943781623,2059,HTTP Request-1,200,OK,GroupUsers1 1-5,text,true,,79727,134,95,95,https://magento.softwaretestingboard.com/,2052,0,467
+1701943781918,2641,HTTP Request,200,OK,GroupUsers1 1-62,text,true,,80447,268,94,94,https://magento.softwaretestingboard.com/,45,0,23
+1701943781918,45,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-62,,true,,716,134,94,94,http://magento.softwaretestingboard.com/,45,0,23
+1701943781964,2595,HTTP Request-1,200,OK,GroupUsers1 1-62,text,true,,79731,134,94,94,https://magento.softwaretestingboard.com/,2589,0,126
+1701943781894,2686,HTTP Request,200,OK,GroupUsers1 1-58,text,true,,80453,268,93,93,https://magento.softwaretestingboard.com/,106,0,36
+1701943781894,106,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-58,,true,,714,134,93,93,http://magento.softwaretestingboard.com/,106,0,36
+1701943782000,2580,HTTP Request-1,200,OK,GroupUsers1 1-58,text,true,,79739,134,93,93,https://magento.softwaretestingboard.com/,2575,0,116
+1701943782067,2564,HTTP Request,200,OK,GroupUsers1 1-74,text,true,,80445,268,92,92,https://magento.softwaretestingboard.com/,62,0,26
+1701943782067,62,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-74,,true,,714,134,92,92,http://magento.softwaretestingboard.com/,62,0,26
+1701943782130,2501,HTTP Request-1,200,OK,GroupUsers1 1-74,text,true,,79731,134,92,92,https://magento.softwaretestingboard.com/,2496,0,50
+1701943781506,3154,HTTP Request,200,OK,GroupUsers1 1-20,text,true,,80447,268,91,91,https://magento.softwaretestingboard.com/,122,0,79
+1701943781506,122,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-20,,true,,718,134,91,91,http://magento.softwaretestingboard.com/,122,0,79
+1701943781628,3032,HTTP Request-1,200,OK,GroupUsers1 1-20,text,true,,79729,134,91,91,https://magento.softwaretestingboard.com/,3027,0,468
+1701943781853,2814,HTTP Request,200,OK,GroupUsers1 1-54,text,true,,80459,268,90,90,https://magento.softwaretestingboard.com/,65,0,25
+1701943781853,65,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-54,,true,,720,134,90,90,http://magento.softwaretestingboard.com/,65,0,25
+1701943781928,2739,HTTP Request-1,200,OK,GroupUsers1 1-54,text,true,,79739,134,90,90,https://magento.softwaretestingboard.com/,2734,0,189
+1701943781473,3201,HTTP Request,200,OK,GroupUsers1 1-14,text,true,,80445,268,89,89,https://magento.softwaretestingboard.com/,144,0,105
+1701943781473,147,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-14,,true,,712,134,89,89,http://magento.softwaretestingboard.com/,144,0,105
+1701943781630,3044,HTTP Request-1,200,OK,GroupUsers1 1-14,text,true,,79733,134,89,89,https://magento.softwaretestingboard.com/,3038,0,450
+1701943781680,3001,HTTP Request,200,OK,GroupUsers1 1-36,text,true,,80449,268,88,88,https://magento.softwaretestingboard.com/,50,0,20
+1701943781680,50,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-36,,true,,720,134,88,88,http://magento.softwaretestingboard.com/,50,0,20
+1701943781731,2950,HTTP Request-1,200,OK,GroupUsers1 1-36,text,true,,79729,134,88,88,https://magento.softwaretestingboard.com/,2944,0,460
+1701943782015,2673,HTTP Request,200,OK,GroupUsers1 1-71,text,true,,80453,268,87,87,https://magento.softwaretestingboard.com/,62,0,26
+1701943782015,62,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-71,,true,,714,134,87,87,http://magento.softwaretestingboard.com/,62,0,26
+1701943782078,2610,HTTP Request-1,200,OK,GroupUsers1 1-71,text,true,,79739,134,87,87,https://magento.softwaretestingboard.com/,2603,0,66
+1701943782074,3292,HTTP Request,200,OK,GroupUsers1 1-77,text,true,,80453,268,86,86,https://magento.softwaretestingboard.com/,57,0,20
+1701943782074,57,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-77,,true,,716,134,86,86,http://magento.softwaretestingboard.com/,57,0,20
+1701943782132,3234,HTTP Request-1,200,OK,GroupUsers1 1-77,text,true,,79737,134,86,86,https://magento.softwaretestingboard.com/,2557,0,50
+1701943781651,3888,HTTP Request,200,OK,GroupUsers1 1-35,text,true,,80449,268,85,85,https://magento.softwaretestingboard.com/,60,0,25
+1701943781651,60,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-35,,true,,712,134,85,85,http://magento.softwaretestingboard.com/,60,0,25
+1701943781712,3827,HTTP Request-1,200,OK,GroupUsers1 1-35,text,true,,79737,134,85,85,https://magento.softwaretestingboard.com/,3822,0,368
+1701943781474,4073,HTTP Request,200,OK,GroupUsers1 1-11,text,true,,80455,268,84,84,https://magento.softwaretestingboard.com/,141,0,105
+1701943781474,146,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-11,,true,,720,134,84,84,http://magento.softwaretestingboard.com/,141,0,105
+1701943781631,3916,HTTP Request-1,200,OK,GroupUsers1 1-11,text,true,,79735,134,84,84,https://magento.softwaretestingboard.com/,3911,0,468
+1701943781946,3619,HTTP Request,200,OK,GroupUsers1 1-65,text,true,,80463,268,83,83,https://magento.softwaretestingboard.com/,51,0,19
+1701943781946,51,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-65,,true,,724,134,83,83,http://magento.softwaretestingboard.com/,51,0,19
+1701943781997,3568,HTTP Request-1,200,OK,GroupUsers1 1-65,text,true,,79739,134,83,83,https://magento.softwaretestingboard.com/,3563,0,273
+1701943781862,3710,HTTP Request,200,OK,GroupUsers1 1-55,text,true,,80457,268,82,82,https://magento.softwaretestingboard.com/,67,0,23
+1701943781862,67,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-55,,true,,718,134,82,82,http://magento.softwaretestingboard.com/,67,0,23
+1701943781930,3642,HTTP Request-1,200,OK,GroupUsers1 1-55,text,true,,79739,134,82,82,https://magento.softwaretestingboard.com/,3635,0,269
+1701943782289,3294,HTTP Request,200,OK,GroupUsers1 1-66,text,true,,80467,268,81,81,https://magento.softwaretestingboard.com/,76,0,36
+1701943782289,76,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-66,,true,,728,134,81,81,http://magento.softwaretestingboard.com/,76,0,36
+1701943782367,3216,HTTP Request-1,200,OK,GroupUsers1 1-66,text,true,,79739,134,81,81,https://magento.softwaretestingboard.com/,3211,0,57
+1701943781886,3715,HTTP Request,200,OK,GroupUsers1 1-57,text,true,,80449,268,80,80,https://magento.softwaretestingboard.com/,63,0,24
+1701943781886,63,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-57,,true,,718,134,80,80,http://magento.softwaretestingboard.com/,63,0,24
+1701943781949,3652,HTTP Request-1,200,OK,GroupUsers1 1-57,text,true,,79731,134,80,80,https://magento.softwaretestingboard.com/,3647,0,320
+1701943781618,3989,HTTP Request,200,OK,GroupUsers1 1-30,text,true,,80451,268,79,79,https://magento.softwaretestingboard.com/,69,0,25
+1701943781618,69,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-30,,true,,720,134,79,79,http://magento.softwaretestingboard.com/,69,0,25
+1701943781688,3919,HTTP Request-1,200,OK,GroupUsers1 1-30,text,true,,79731,134,79,79,https://magento.softwaretestingboard.com/,3913,0,621
+1701943781472,4163,HTTP Request,200,OK,GroupUsers1 1-3,text,true,,80459,268,78,78,https://magento.softwaretestingboard.com/,144,0,106
+1701943781472,147,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-3,,true,,728,134,78,78,http://magento.softwaretestingboard.com/,144,0,106
+1701943781630,4005,HTTP Request-1,200,OK,GroupUsers1 1-3,text,true,,79731,134,78,78,https://magento.softwaretestingboard.com/,4000,0,543
+1701943781472,4170,HTTP Request,200,OK,GroupUsers1 1-7,text,true,,80457,268,77,77,https://magento.softwaretestingboard.com/,142,0,112
+1701943781472,146,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-7,,true,,718,134,77,77,http://magento.softwaretestingboard.com/,142,0,112
+1701943781626,4016,HTTP Request-1,200,OK,GroupUsers1 1-7,text,true,,79739,134,77,77,https://magento.softwaretestingboard.com/,4010,0,698
+1701943781913,3739,HTTP Request,200,OK,GroupUsers1 1-60,text,true,,80453,268,76,76,https://magento.softwaretestingboard.com/,112,0,33
+1701943781913,112,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-60,,true,,716,134,76,76,http://magento.softwaretestingboard.com/,112,0,33
+1701943782033,3619,HTTP Request-1,200,OK,GroupUsers1 1-60,text,true,,79737,134,76,76,https://magento.softwaretestingboard.com/,3614,0,86
+1701943782190,3497,HTTP Request,200,OK,GroupUsers1 1-89,text,true,,80449,268,75,75,https://magento.softwaretestingboard.com/,68,0,19
+1701943782190,68,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-89,,true,,712,134,75,75,http://magento.softwaretestingboard.com/,68,0,19
+1701943782259,3428,HTTP Request-1,200,OK,GroupUsers1 1-89,text,true,,79737,134,75,75,https://magento.softwaretestingboard.com/,3423,0,62
+1701943781509,4190,HTTP Request,200,OK,GroupUsers1 1-19,text,true,,80451,268,74,74,https://magento.softwaretestingboard.com/,108,0,70
+1701943781509,110,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-19,,true,,716,134,74,74,http://magento.softwaretestingboard.com/,108,0,70
+1701943781627,4072,HTTP Request-1,200,OK,GroupUsers1 1-19,text,true,,79735,134,74,74,https://magento.softwaretestingboard.com/,4067,0,563
+1701943781540,5080,HTTP Request,200,OK,GroupUsers1 1-22,text,true,,80449,268,73,73,https://magento.softwaretestingboard.com/,75,0,38
+1701943781540,79,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-22,,true,,716,134,73,73,http://magento.softwaretestingboard.com/,75,0,38
+1701943781625,4995,HTTP Request-1,200,OK,GroupUsers1 1-22,text,true,,79733,134,73,73,https://magento.softwaretestingboard.com/,4990,0,702
+1701943781472,5155,HTTP Request,200,OK,GroupUsers1 1-2,text,true,,80453,268,72,72,https://magento.softwaretestingboard.com/,150,0,112
+1701943781472,150,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-2,,true,,718,134,72,72,http://magento.softwaretestingboard.com/,150,0,112
+1701943781623,5004,HTTP Request-1,200,OK,GroupUsers1 1-2,text,true,,79735,134,72,72,https://magento.softwaretestingboard.com/,4998,0,721
+1701943782133,4501,HTTP Request,200,OK,GroupUsers1 1-83,text,true,,80466,268,71,71,https://magento.softwaretestingboard.com/,50,0,19
+1701943782133,50,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-83,,true,,728,134,71,71,http://magento.softwaretestingboard.com/,50,0,19
+1701943782184,4450,HTTP Request-1,200,OK,GroupUsers1 1-83,text,true,,79738,134,71,71,https://magento.softwaretestingboard.com/,4444,0,501
+1701943781473,5899,HTTP Request,200,OK,GroupUsers1 1-8,text,true,,80466,268,70,70,https://magento.softwaretestingboard.com/,148,0,105
+1701943781473,148,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-8,,true,,722,134,70,70,http://magento.softwaretestingboard.com/,148,0,105
+1701943781623,5749,HTTP Request-1,200,OK,GroupUsers1 1-8,text,true,,79744,134,70,70,https://magento.softwaretestingboard.com/,5070,0,543
+1701943782733,4803,HTTP Request,200,OK,GroupUsers1 1-96,text,true,,80457,268,69,69,https://magento.softwaretestingboard.com/,56,0,25
+1701943782733,56,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-96,,true,,720,134,69,69,http://magento.softwaretestingboard.com/,56,0,25
+1701943782789,4747,HTTP Request-1,200,OK,GroupUsers1 1-96,text,true,,79737,134,69,69,https://magento.softwaretestingboard.com/,4741,0,49
+1701943782250,5304,HTTP Request,200,OK,GroupUsers1 1-95,text,true,,80447,268,68,68,https://magento.softwaretestingboard.com/,59,0,25
+1701943782250,59,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-95,,true,,714,134,68,68,http://magento.softwaretestingboard.com/,59,0,25
+1701943782310,5244,HTTP Request-1,200,OK,GroupUsers1 1-95,text,true,,79733,134,68,68,https://magento.softwaretestingboard.com/,5239,0,63
+1701943781474,6104,HTTP Request,200,OK,GroupUsers1 1-12,text,true,,80445,268,67,67,https://magento.softwaretestingboard.com/,153,0,112
+1701943781474,153,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-12,,true,,716,134,67,67,http://magento.softwaretestingboard.com/,153,0,112
+1701943781627,5951,HTTP Request-1,200,OK,GroupUsers1 1-12,text,true,,79729,134,67,67,https://magento.softwaretestingboard.com/,5946,0,701
+1701943781798,5793,HTTP Request,200,OK,GroupUsers1 1-50,text,true,,80445,268,66,66,https://magento.softwaretestingboard.com/,63,0,25
+1701943781798,63,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-50,,true,,716,134,66,66,http://magento.softwaretestingboard.com/,63,0,25
+1701943781861,5730,HTTP Request-1,200,OK,GroupUsers1 1-50,text,true,,79729,134,66,66,https://magento.softwaretestingboard.com/,5725,0,483
+1701943782506,5091,HTTP Request,200,OK,GroupUsers1 1-75,text,true,,80453,268,65,65,https://magento.softwaretestingboard.com/,59,0,23
+1701943782506,59,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-75,,true,,718,134,65,65,http://magento.softwaretestingboard.com/,59,0,23
+1701943782566,5031,HTTP Request-1,200,OK,GroupUsers1 1-75,text,true,,79735,134,65,65,https://magento.softwaretestingboard.com/,5026,0,81
+1701943781529,6082,HTTP Request,200,OK,GroupUsers1 1-21,text,true,,80459,268,64,64,https://magento.softwaretestingboard.com/,120,0,54
+1701943781529,120,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-21,,true,,726,134,64,64,http://magento.softwaretestingboard.com/,120,0,54
+1701943781649,5962,HTTP Request-1,200,OK,GroupUsers1 1-21,text,true,,79733,134,64,64,https://magento.softwaretestingboard.com/,5957,0,738
+1701943782239,5385,HTTP Request,200,OK,GroupUsers1 1-63,text,true,,80449,268,63,63,https://magento.softwaretestingboard.com/,77,0,26
+1701943782239,77,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-63,,true,,718,134,63,63,http://magento.softwaretestingboard.com/,77,0,26
+1701943782324,5300,HTTP Request-1,200,OK,GroupUsers1 1-63,text,true,,79731,134,63,63,https://magento.softwaretestingboard.com/,5294,0,73
+1701943781887,5790,HTTP Request,200,OK,GroupUsers1 1-59,text,true,,80463,268,62,62,https://magento.softwaretestingboard.com/,59,0,24
+1701943781887,59,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-59,,true,,730,134,62,62,http://magento.softwaretestingboard.com/,59,0,24
+1701943781946,5731,HTTP Request-1,200,OK,GroupUsers1 1-59,text,true,,79733,134,62,62,https://magento.softwaretestingboard.com/,5726,0,417
+1701943782238,5451,HTTP Request,200,OK,GroupUsers1 1-61,text,true,,80451,268,61,61,https://magento.softwaretestingboard.com/,52,0,24
+1701943782238,52,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-61,,true,,718,134,61,61,http://magento.softwaretestingboard.com/,52,0,24
+1701943782290,5399,HTTP Request-1,200,OK,GroupUsers1 1-61,text,true,,79733,134,61,61,https://magento.softwaretestingboard.com/,5394,0,79
+1701943782733,5822,HTTP Request,200,OK,GroupUsers1 1-97,text,true,,80455,268,60,60,https://magento.softwaretestingboard.com/,52,0,20
+1701943782733,52,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-97,,true,,720,134,60,60,http://magento.softwaretestingboard.com/,52,0,20
+1701943782786,5769,HTTP Request-1,200,OK,GroupUsers1 1-97,text,true,,79735,134,60,60,https://magento.softwaretestingboard.com/,5763,0,49
+1701943781473,7143,HTTP Request,200,OK,GroupUsers1 1-15,text,true,,80452,268,59,59,https://magento.softwaretestingboard.com/,142,0,106
+1701943781473,147,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-15,,true,,710,134,59,59,http://magento.softwaretestingboard.com/,142,0,106
+1701943781629,6987,HTTP Request-1,200,OK,GroupUsers1 1-15,text,true,,79742,134,59,59,https://magento.softwaretestingboard.com/,6981,0,808
+1701943781535,7097,HTTP Request,200,OK,GroupUsers1 1-23,text,true,,80457,268,58,58,https://magento.softwaretestingboard.com/,88,0,50
+1701943781535,88,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-23,,true,,722,134,58,58,http://magento.softwaretestingboard.com/,88,0,50
+1701943781624,7008,HTTP Request-1,200,OK,GroupUsers1 1-23,text,true,,79735,134,58,58,https://magento.softwaretestingboard.com/,7003,0,722
+1701943781685,6981,HTTP Request,200,OK,GroupUsers1 1-37,text,true,,80451,268,57,57,https://magento.softwaretestingboard.com/,63,0,26
+1701943781685,63,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-37,,true,,718,134,57,57,http://magento.softwaretestingboard.com/,63,0,26
+1701943781749,6917,HTTP Request-1,200,OK,GroupUsers1 1-37,text,true,,79733,134,57,57,https://magento.softwaretestingboard.com/,6912,0,735
+1701943781480,7201,HTTP Request,200,OK,GroupUsers1 1-16,text,true,,80447,268,56,56,https://magento.softwaretestingboard.com/,137,0,98
+1701943781480,140,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-16,,true,,716,134,56,56,http://magento.softwaretestingboard.com/,137,0,98
+1701943781630,7051,HTTP Request-1,200,OK,GroupUsers1 1-16,text,true,,79731,134,56,56,https://magento.softwaretestingboard.com/,7046,0,862
+1701943782105,7261,HTTP Request,200,OK,GroupUsers1 1-80,text,true,,80449,268,55,55,https://magento.softwaretestingboard.com/,60,0,26
+1701943782105,60,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-80,,true,,718,134,55,55,http://magento.softwaretestingboard.com/,60,0,26
+1701943782166,7200,HTTP Request-1,200,OK,GroupUsers1 1-80,text,true,,79731,134,55,55,https://magento.softwaretestingboard.com/,6540,0,188
+1701943781856,7701,HTTP Request,200,OK,GroupUsers1 1-56,text,true,,80461,268,54,54,https://magento.softwaretestingboard.com/,63,0,25
+1701943781856,63,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-56,,true,,720,134,54,54,http://magento.softwaretestingboard.com/,63,0,25
+1701943781919,7638,HTTP Request-1,200,OK,GroupUsers1 1-56,text,true,,79741,134,54,54,https://magento.softwaretestingboard.com/,7633,0,437
+1701943781835,7729,HTTP Request,200,OK,GroupUsers1 1-52,text,true,,80459,268,53,53,https://magento.softwaretestingboard.com/,63,0,26
+1701943781835,63,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-52,,true,,730,134,53,53,http://magento.softwaretestingboard.com/,63,0,26
+1701943781899,7665,HTTP Request-1,200,OK,GroupUsers1 1-52,text,true,,79729,134,53,53,https://magento.softwaretestingboard.com/,7660,0,538
+1701943781709,7878,HTTP Request,200,OK,GroupUsers1 1-41,text,true,,80453,268,52,52,https://magento.softwaretestingboard.com/,49,0,19
+1701943781709,49,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-41,,true,,722,134,52,52,http://magento.softwaretestingboard.com/,49,0,19
+1701943781759,7828,HTTP Request-1,200,OK,GroupUsers1 1-41,text,true,,79731,134,52,52,https://magento.softwaretestingboard.com/,7823,0,647
+1701943781500,8109,HTTP Request,200,OK,GroupUsers1 1-18,text,true,,80454,268,51,51,https://magento.softwaretestingboard.com/,116,0,80
+1701943781500,119,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-18,,true,,712,134,51,51,http://magento.softwaretestingboard.com/,116,0,80
+1701943781624,7985,HTTP Request-1,200,OK,GroupUsers1 1-18,text,true,,79742,134,51,51,https://magento.softwaretestingboard.com/,7980,0,907
+1701943782429,7187,HTTP Request,200,OK,GroupUsers1 1-73,text,true,,80455,268,50,50,https://magento.softwaretestingboard.com/,58,0,26
+1701943782429,58,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-73,,true,,720,134,50,50,http://magento.softwaretestingboard.com/,58,0,26
+1701943782488,7128,HTTP Request-1,200,OK,GroupUsers1 1-73,text,true,,79735,134,50,50,https://magento.softwaretestingboard.com/,7122,0,61
+1701943781680,7953,HTTP Request,200,OK,GroupUsers1 1-38,text,true,,80457,268,49,49,https://magento.softwaretestingboard.com/,52,0,20
+1701943781680,52,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-38,,true,,724,134,49,49,http://magento.softwaretestingboard.com/,52,0,20
+1701943781732,7901,HTTP Request-1,200,OK,GroupUsers1 1-38,text,true,,79733,134,49,49,https://magento.softwaretestingboard.com/,7896,0,791
+1701943782281,7368,HTTP Request,200,OK,GroupUsers1 1-98,text,true,,80455,268,48,48,https://magento.softwaretestingboard.com/,62,0,25
+1701943782281,62,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-98,,true,,720,134,48,48,http://magento.softwaretestingboard.com/,62,0,25
+1701943782344,7305,HTTP Request-1,200,OK,GroupUsers1 1-98,text,true,,79735,134,48,48,https://magento.softwaretestingboard.com/,7300,0,61
+1701943781472,8204,HTTP Request,200,OK,GroupUsers1 1-9,text,true,,80449,268,47,47,https://magento.softwaretestingboard.com/,165,0,106
+1701943781472,165,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-9,,true,,718,134,47,47,http://magento.softwaretestingboard.com/,165,0,106
+1701943781639,8037,HTTP Request-1,200,OK,GroupUsers1 1-9,text,true,,79731,134,47,47,https://magento.softwaretestingboard.com/,8026,0,884
+1701943782332,7345,HTTP Request,200,OK,GroupUsers1 1-67,text,true,,80451,268,47,47,https://magento.softwaretestingboard.com/,67,0,32
+1701943782332,67,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-67,,true,,720,134,47,47,http://magento.softwaretestingboard.com/,67,0,32
+1701943782399,7278,HTTP Request-1,200,OK,GroupUsers1 1-67,text,true,,79731,134,47,47,https://magento.softwaretestingboard.com/,7269,0,144
+1701943782735,6957,HTTP Request,200,OK,GroupUsers1 1-100,text,true,,80449,268,45,45,https://magento.softwaretestingboard.com/,59,0,25
+1701943782735,59,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-100,,true,,718,134,45,45,http://magento.softwaretestingboard.com/,59,0,25
+1701943782795,6897,HTTP Request-1,200,OK,GroupUsers1 1-100,text,true,,79731,134,45,45,https://magento.softwaretestingboard.com/,6890,0,62
+1701943781658,8038,HTTP Request,200,OK,GroupUsers1 1-34,text,true,,80449,268,44,44,https://magento.softwaretestingboard.com/,54,0,19
+1701943781658,54,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-34,,true,,714,134,44,44,http://magento.softwaretestingboard.com/,54,0,19
+1701943781713,7983,HTTP Request-1,200,OK,GroupUsers1 1-34,text,true,,79735,134,44,44,https://magento.softwaretestingboard.com/,7975,0,842
+1701943781587,8124,HTTP Request,200,OK,GroupUsers1 1-27,text,true,,80453,268,43,43,https://magento.softwaretestingboard.com/,57,0,20
+1701943781587,57,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-27,,true,,718,134,43,43,http://magento.softwaretestingboard.com/,57,0,20
+1701943781644,8067,HTTP Request-1,200,OK,GroupUsers1 1-27,text,true,,79735,134,43,43,https://magento.softwaretestingboard.com/,8061,0,897
+1701943782383,7998,HTTP Request,200,OK,GroupUsers1 1-69,text,true,,80445,268,42,42,https://magento.softwaretestingboard.com/,61,0,26
+1701943782383,61,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-69,,true,,714,134,42,42,http://magento.softwaretestingboard.com/,61,0,26
+1701943782445,7936,HTTP Request-1,200,OK,GroupUsers1 1-69,text,true,,79731,134,42,42,https://magento.softwaretestingboard.com/,7269,0,60
+1701943781647,8919,HTTP Request,200,OK,GroupUsers1 1-33,text,true,,80449,268,41,41,https://magento.softwaretestingboard.com/,49,0,19
+1701943781647,49,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-33,,true,,710,134,41,41,http://magento.softwaretestingboard.com/,49,0,19
+1701943781696,8870,HTTP Request-1,200,OK,GroupUsers1 1-33,text,true,,79739,134,41,41,https://magento.softwaretestingboard.com/,8865,0,836
+1701943781472,9178,HTTP Request,200,OK,GroupUsers1 1-6,text,true,,80445,268,40,40,https://magento.softwaretestingboard.com/,142,0,105
+1701943781472,146,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-6,,true,,712,134,40,40,http://magento.softwaretestingboard.com/,142,0,105
+1701943781630,9020,HTTP Request-1,200,OK,GroupUsers1 1-6,text,true,,79733,134,40,40,https://magento.softwaretestingboard.com/,9015,0,934
+1701943781597,9111,HTTP Request,200,OK,GroupUsers1 1-28,text,true,,80455,268,39,39,https://magento.softwaretestingboard.com/,58,0,28
+1701943781597,58,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-28,,true,,718,134,39,39,http://magento.softwaretestingboard.com/,58,0,28
+1701943781655,9053,HTTP Request-1,200,OK,GroupUsers1 1-28,text,true,,79737,134,39,39,https://magento.softwaretestingboard.com/,9048,0,896
+1701943782520,9050,HTTP Request,200,OK,GroupUsers1 1-85,text,true,,80455,268,38,38,https://magento.softwaretestingboard.com/,55,0,19
+1701943782520,55,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-85,,true,,716,134,38,38,http://magento.softwaretestingboard.com/,55,0,19
+1701943782575,8995,HTTP Request-1,200,OK,GroupUsers1 1-85,text,true,,79739,134,38,38,https://magento.softwaretestingboard.com/,8990,0,68
+1701943782331,9255,HTTP Request,200,OK,GroupUsers1 1-70,text,true,,80458,268,37,37,https://magento.softwaretestingboard.com/,69,0,22
+1701943782331,69,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-70,,true,,720,134,37,37,http://magento.softwaretestingboard.com/,69,0,22
+1701943782400,9186,HTTP Request-1,200,OK,GroupUsers1 1-70,text,true,,79738,134,37,37,https://magento.softwaretestingboard.com/,9181,0,142
+1701943782438,9162,HTTP Request,200,OK,GroupUsers1 1-72,text,true,,80460,268,36,36,https://magento.softwaretestingboard.com/,60,0,30
+1701943782438,60,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-72,,true,,724,134,36,36,http://magento.softwaretestingboard.com/,60,0,30
+1701943782499,9101,HTTP Request-1,200,OK,GroupUsers1 1-72,text,true,,79736,134,36,36,https://magento.softwaretestingboard.com/,9096,0,63
+1701943781828,9783,HTTP Request,200,OK,GroupUsers1 1-53,text,true,,80441,268,35,35,https://magento.softwaretestingboard.com/,43,0,20
+1701943781828,43,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-53,,true,,712,134,35,35,http://magento.softwaretestingboard.com/,43,0,20
+1701943781872,9739,HTTP Request-1,200,OK,GroupUsers1 1-53,text,true,,79729,134,35,35,https://magento.softwaretestingboard.com/,9734,0,798
+1701943782288,9327,HTTP Request,200,OK,GroupUsers1 1-64,text,true,,80459,268,34,34,https://magento.softwaretestingboard.com/,83,0,36
+1701943782288,83,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-64,,true,,720,134,34,34,http://magento.softwaretestingboard.com/,83,0,36
+1701943782372,9243,HTTP Request-1,200,OK,GroupUsers1 1-64,text,true,,79739,134,34,34,https://magento.softwaretestingboard.com/,9073,0,181
+1701943781472,10161,HTTP Request,200,OK,GroupUsers1 1-4,text,true,,80451,268,33,33,https://magento.softwaretestingboard.com/,142,0,107
+1701943781472,147,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-4,,true,,718,134,33,33,http://magento.softwaretestingboard.com/,142,0,107
+1701943781630,10003,HTTP Request-1,200,OK,GroupUsers1 1-4,text,true,,79733,134,33,33,https://magento.softwaretestingboard.com/,9997,0,1030
+1701943781747,9892,HTTP Request,200,OK,GroupUsers1 1-43,text,true,,80449,268,32,32,https://magento.softwaretestingboard.com/,57,0,19
+1701943781747,57,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-43,,true,,720,134,32,32,http://magento.softwaretestingboard.com/,57,0,19
+1701943781804,9835,HTTP Request-1,200,OK,GroupUsers1 1-43,text,true,,79729,134,32,32,https://magento.softwaretestingboard.com/,9829,0,764
+1701943782522,9125,HTTP Request,200,OK,GroupUsers1 1-91,text,true,,80457,268,31,31,https://magento.softwaretestingboard.com/,56,0,18
+1701943782522,56,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-91,,true,,718,134,31,31,http://magento.softwaretestingboard.com/,56,0,18
+1701943782580,9067,HTTP Request-1,200,OK,GroupUsers1 1-91,text,true,,79739,134,31,31,https://magento.softwaretestingboard.com/,9062,0,70
+1701943781478,10182,HTTP Request,200,OK,GroupUsers1 1-17,text,true,,80453,268,30,30,https://magento.softwaretestingboard.com/,137,0,100
+1701943781478,142,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-17,,true,,716,134,30,30,http://magento.softwaretestingboard.com/,137,0,100
+1701943781630,10030,HTTP Request-1,200,OK,GroupUsers1 1-17,text,true,,79737,134,30,30,https://magento.softwaretestingboard.com/,10025,0,1043
+1701943782531,9171,HTTP Request,200,OK,GroupUsers1 1-88,text,true,,80443,268,29,29,https://magento.softwaretestingboard.com/,50,0,19
+1701943782531,50,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-88,,true,,712,134,29,29,http://magento.softwaretestingboard.com/,50,0,19
+1701943782584,9118,HTTP Request-1,200,OK,GroupUsers1 1-88,text,true,,79731,134,29,29,https://magento.softwaretestingboard.com/,8949,0,63
+1701943782446,10105,HTTP Request,200,OK,GroupUsers1 1-76,text,true,,80445,268,28,28,https://magento.softwaretestingboard.com/,58,0,26
+1701943782446,58,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-76,,true,,720,134,28,28,http://magento.softwaretestingboard.com/,58,0,26
+1701943782504,10047,HTTP Request-1,200,OK,GroupUsers1 1-76,text,true,,79725,134,28,28,https://magento.softwaretestingboard.com/,10035,0,47
+1701943782527,10026,HTTP Request,200,OK,GroupUsers1 1-90,text,true,,80456,268,27,27,https://magento.softwaretestingboard.com/,58,0,25
+1701943782527,58,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-90,,true,,720,134,27,27,http://magento.softwaretestingboard.com/,58,0,25
+1701943782586,9967,HTTP Request-1,200,OK,GroupUsers1 1-90,text,true,,79736,134,27,27,https://magento.softwaretestingboard.com/,9966,0,72
+1701943781738,10862,HTTP Request,200,OK,GroupUsers1 1-44,text,true,,80455,268,26,26,https://magento.softwaretestingboard.com/,62,0,26
+1701943781738,62,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-44,,true,,716,134,26,26,http://magento.softwaretestingboard.com/,62,0,26
+1701943781800,10800,HTTP Request-1,200,OK,GroupUsers1 1-44,text,true,,79739,134,26,26,https://magento.softwaretestingboard.com/,10795,0,869
+1701943781593,11014,HTTP Request,200,OK,GroupUsers1 1-29,text,true,,80455,268,25,25,https://magento.softwaretestingboard.com/,51,0,20
+1701943781593,51,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-29,,true,,718,134,25,25,http://magento.softwaretestingboard.com/,51,0,20
+1701943781644,10963,HTTP Request-1,200,OK,GroupUsers1 1-29,text,true,,79737,134,25,25,https://magento.softwaretestingboard.com/,10956,0,1041
+1701943782509,10105,HTTP Request,200,OK,GroupUsers1 1-79,text,true,,80447,268,24,24,https://magento.softwaretestingboard.com/,52,0,20
+1701943782509,52,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-79,,true,,716,134,24,24,http://magento.softwaretestingboard.com/,52,0,20
+1701943782562,10052,HTTP Request-1,200,OK,GroupUsers1 1-79,text,true,,79731,134,24,24,https://magento.softwaretestingboard.com/,10045,0,92
+1701943782456,10165,HTTP Request,200,OK,GroupUsers1 1-82,text,true,,80457,268,23,23,https://magento.softwaretestingboard.com/,65,0,27
+1701943782456,65,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-82,,true,,726,134,23,23,http://magento.softwaretestingboard.com/,65,0,27
+1701943782521,10100,HTTP Request-1,200,OK,GroupUsers1 1-82,text,true,,79731,134,23,23,https://magento.softwaretestingboard.com/,10093,0,165
+1701943781769,10909,HTTP Request,200,OK,GroupUsers1 1-47,text,true,,80447,268,22,22,https://magento.softwaretestingboard.com/,48,0,19
+1701943781769,48,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-47,,true,,718,134,22,22,http://magento.softwaretestingboard.com/,48,0,19
+1701943781817,10861,HTTP Request-1,200,OK,GroupUsers1 1-47,text,true,,79729,134,22,22,https://magento.softwaretestingboard.com/,10856,0,868
+1701943781804,10904,HTTP Request,200,OK,GroupUsers1 1-49,text,true,,80459,268,21,21,https://magento.softwaretestingboard.com/,62,0,25
+1701943781804,62,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-49,,true,,724,134,21,21,http://magento.softwaretestingboard.com/,62,0,25
+1701943781867,10841,HTTP Request-1,200,OK,GroupUsers1 1-49,text,true,,79735,134,21,21,https://magento.softwaretestingboard.com/,10835,0,853
+1701943781634,11727,HTTP Request,200,OK,GroupUsers1 1-31,text,true,,80459,268,20,20,https://magento.softwaretestingboard.com/,59,0,24
+1701943781634,59,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-31,,true,,718,134,20,20,http://magento.softwaretestingboard.com/,59,0,24
+1701943781694,11667,HTTP Request-1,200,OK,GroupUsers1 1-31,text,true,,79741,134,20,20,https://magento.softwaretestingboard.com/,10987,0,976
+1701943781564,11979,HTTP Request,200,OK,GroupUsers1 1-26,text,true,,80453,268,19,19,https://magento.softwaretestingboard.com/,67,0,25
+1701943781564,67,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-26,,true,,714,134,19,19,http://magento.softwaretestingboard.com/,67,0,25
+1701943781632,11911,HTTP Request-1,200,OK,GroupUsers1 1-26,text,true,,79739,134,19,19,https://magento.softwaretestingboard.com/,11902,0,1053
+1701943781623,11924,HTTP Request,200,OK,GroupUsers1 1-32,text,true,,80447,268,18,18,https://magento.softwaretestingboard.com/,58,0,25
+1701943781623,58,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-32,,true,,712,134,18,18,http://magento.softwaretestingboard.com/,58,0,25
+1701943781682,11865,HTTP Request-1,200,OK,GroupUsers1 1-32,text,true,,79735,134,18,18,https://magento.softwaretestingboard.com/,11855,0,1016
+1701943781561,11997,HTTP Request,200,OK,GroupUsers1 1-24,text,true,,80450,268,17,17,https://magento.softwaretestingboard.com/,60,0,25
+1701943781561,60,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-24,,true,,712,134,17,17,http://magento.softwaretestingboard.com/,60,0,25
+1701943781624,11934,HTTP Request-1,200,OK,GroupUsers1 1-24,text,true,,79738,134,17,17,https://magento.softwaretestingboard.com/,11928,0,1062
+1701943782522,11064,HTTP Request,200,OK,GroupUsers1 1-87,text,true,,80453,268,16,16,https://magento.softwaretestingboard.com/,47,0,19
+1701943782522,47,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-87,,true,,716,134,16,16,http://magento.softwaretestingboard.com/,47,0,19
+1701943782569,11017,HTTP Request-1,200,OK,GroupUsers1 1-87,text,true,,79737,134,16,16,https://magento.softwaretestingboard.com/,11009,0,78
+1701943781567,12023,HTTP Request,200,OK,GroupUsers1 1-25,text,true,,80445,268,15,15,https://magento.softwaretestingboard.com/,50,0,20
+1701943781567,53,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-25,,true,,712,134,15,15,http://magento.softwaretestingboard.com/,50,0,20
+1701943781627,11963,HTTP Request-1,200,OK,GroupUsers1 1-25,text,true,,79733,134,15,15,https://magento.softwaretestingboard.com/,11954,0,990
+1701943781472,12155,HTTP Request,200,OK,GroupUsers1 1-1,text,true,,80449,268,14,14,https://magento.softwaretestingboard.com/,145,0,111
+1701943781472,146,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-1,,true,,716,134,14,14,http://magento.softwaretestingboard.com/,145,0,111
+1701943781625,12002,HTTP Request-1,200,OK,GroupUsers1 1-1,text,true,,79733,134,14,14,https://magento.softwaretestingboard.com/,11996,0,1077
+1701943782471,11189,HTTP Request,200,OK,GroupUsers1 1-84,text,true,,80459,268,13,13,https://magento.softwaretestingboard.com/,67,0,29
+1701943782471,67,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-84,,true,,720,134,13,13,http://magento.softwaretestingboard.com/,67,0,29
+1701943782538,11122,HTTP Request-1,200,OK,GroupUsers1 1-84,text,true,,79739,134,13,13,https://magento.softwaretestingboard.com/,11117,0,146
+1701943781473,13073,HTTP Request,200,OK,GroupUsers1 1-13,text,true,,80455,268,12,12,https://magento.softwaretestingboard.com/,147,0,112
+1701943781473,147,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-13,,true,,722,134,12,12,http://magento.softwaretestingboard.com/,147,0,112
+1701943781628,12918,HTTP Request-1,200,OK,GroupUsers1 1-13,text,true,,79733,134,12,12,https://magento.softwaretestingboard.com/,12907,0,1089
+1701943781824,12723,HTTP Request,200,OK,GroupUsers1 1-51,text,true,,80461,268,12,12,https://magento.softwaretestingboard.com/,59,0,24
+1701943781824,59,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-51,,true,,718,134,12,12,http://magento.softwaretestingboard.com/,59,0,24
+1701943781884,12663,HTTP Request-1,200,OK,GroupUsers1 1-51,text,true,,79743,134,12,12,https://magento.softwaretestingboard.com/,12653,0,802
+1701943781766,12793,HTTP Request,200,OK,GroupUsers1 1-45,text,true,,80457,268,10,10,https://magento.softwaretestingboard.com/,49,0,19
+1701943781766,49,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-45,,true,,718,134,10,10,http://magento.softwaretestingboard.com/,49,0,19
+1701943781816,12743,HTTP Request-1,200,OK,GroupUsers1 1-45,text,true,,79739,134,10,10,https://magento.softwaretestingboard.com/,12738,0,884
+1701943781706,12877,HTTP Request,200,OK,GroupUsers1 1-39,text,true,,80457,268,9,9,https://magento.softwaretestingboard.com/,57,0,22
+1701943781706,57,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-39,,true,,722,134,9,9,http://magento.softwaretestingboard.com/,57,0,22
+1701943781764,12819,HTTP Request-1,200,OK,GroupUsers1 1-39,text,true,,79735,134,9,9,https://magento.softwaretestingboard.com/,12650,0,960
+1701943782507,12085,HTTP Request,200,OK,GroupUsers1 1-78,text,true,,80439,268,8,8,https://magento.softwaretestingboard.com/,63,0,29
+1701943782507,63,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-78,,true,,710,134,8,8,http://magento.softwaretestingboard.com/,63,0,29
+1701943782666,11926,HTTP Request-1,200,OK,GroupUsers1 1-78,text,true,,79729,134,8,8,https://magento.softwaretestingboard.com/,11921,0,64
+1701943781473,13130,HTTP Request,200,OK,GroupUsers1 1-10,text,true,,80455,268,7,7,https://magento.softwaretestingboard.com/,153,0,112
+1701943781473,153,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-10,,true,,720,134,7,7,http://magento.softwaretestingboard.com/,153,0,112
+1701943781629,12974,HTTP Request-1,200,OK,GroupUsers1 1-10,text,true,,79735,134,7,7,https://magento.softwaretestingboard.com/,12968,0,1056
+1701943782521,12098,HTTP Request,200,OK,GroupUsers1 1-93,text,true,,80455,268,6,6,https://magento.softwaretestingboard.com/,47,0,19
+1701943782521,47,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-93,,true,,716,134,6,6,http://magento.softwaretestingboard.com/,47,0,19
+1701943782569,12050,HTTP Request-1,200,OK,GroupUsers1 1-93,text,true,,79739,134,6,6,https://magento.softwaretestingboard.com/,12045,0,134
+1701943781714,12925,HTTP Request,200,OK,GroupUsers1 1-40,text,true,,80443,268,5,5,https://magento.softwaretestingboard.com/,52,0,19
+1701943781714,52,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-40,,true,,712,134,5,5,http://magento.softwaretestingboard.com/,52,0,19
+1701943781766,12873,HTTP Request-1,200,OK,GroupUsers1 1-40,text,true,,79731,134,5,5,https://magento.softwaretestingboard.com/,12867,0,955
+1701943781740,12905,HTTP Request,200,OK,GroupUsers1 1-42,text,true,,80461,268,4,4,https://magento.softwaretestingboard.com/,54,0,25
+1701943781740,54,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-42,,true,,718,134,4,4,http://magento.softwaretestingboard.com/,54,0,25
+1701943781794,12851,HTTP Request-1,200,OK,GroupUsers1 1-42,text,true,,79743,134,4,4,https://magento.softwaretestingboard.com/,12845,0,925
+1701943781782,12885,HTTP Request,200,OK,GroupUsers1 1-46,text,true,,80454,268,3,3,https://magento.softwaretestingboard.com/,53,0,24
+1701943781782,53,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-46,,true,,720,134,3,3,http://magento.softwaretestingboard.com/,53,0,24
+1701943781835,12832,HTTP Request-1,200,OK,GroupUsers1 1-46,text,true,,79734,134,3,3,https://magento.softwaretestingboard.com/,12826,0,867
+1701943782675,12005,HTTP Request,200,OK,GroupUsers1 1-94,text,true,,80453,268,2,2,https://magento.softwaretestingboard.com/,64,0,29
+1701943782675,64,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-94,,true,,722,134,2,2,http://magento.softwaretestingboard.com/,64,0,29
+1701943782740,11940,HTTP Request-1,200,OK,GroupUsers1 1-94,text,true,,79731,134,2,2,https://magento.softwaretestingboard.com/,11935,0,48
+1701943782513,13031,HTTP Request,200,OK,GroupUsers1 1-81,text,true,,80449,268,1,1,https://magento.softwaretestingboard.com/,51,0,20
+1701943782513,51,HTTP Request-0,301,Moved Permanently,GroupUsers1 1-81,,true,,716,134,1,1,http://magento.softwaretestingboard.com/,51,0,20
+1701943782565,12979,HTTP Request-1,200,OK,GroupUsers1 1-81,text,true,,79733,134,1,1,https://magento.softwaretestingboard.com/,12973,0,121
