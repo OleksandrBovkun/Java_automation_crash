@@ -1,4 +1,5 @@
 package com.company;
+
 import java.util.Scanner;
 
 class Person {
@@ -81,12 +82,11 @@ class Person {
     }
 
 
-    public void output() {
-        System.out.println("Name: " + name);
-        System.out.println("Birth Year: " + birthYear);
-        System.out.println("Age: " + age());
+    @Override
+    public String toString(){
+        return "\nInformation about person:\nName - " + name + "\nBirthday year - " + birthYear +
+                "\nCurrent age - " + age();
     }
-
 
     public void changeName(String newName) {
         this.name = newName;
