@@ -1,4 +1,4 @@
-
+/.idea/
 
 /fedyniak/target/classes/org/example/org.example.org.task3.Main.class
 /fedyniak/target/classes/org/example/Person.class
@@ -6,7 +6,9 @@
 /fedyniak/Fedyniak.iml
 /task1.iml
 /task2.iml
+/out/
 
+/src/main/resources/config.json
+/src/test/resources/allure.properties
 /target
-
-
+/allure-results
